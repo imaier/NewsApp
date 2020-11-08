@@ -16,6 +16,8 @@
 		CED193172557DEE100040A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED193152557DEE100040A64 /* LaunchScreen.storyboard */; };
 		CED1931F2557E25D00040A64 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CED1931E2557E25D00040A64 /* Podfile */; };
 		CED193212557E27800040A64 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CED193202557E27800040A64 /* .swiftlint.yml */; };
+		CED193242557E38B00040A64 /* Rambafile in Resources */ = {isa = PBXBuildFile; fileRef = CED193232557E38B00040A64 /* Rambafile */; };
+		CED193262557E4B600040A64 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CED193252557E4B600040A64 /* .gitignore */; };
 		F85669EC1DE5E024D7509450 /* Pods_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452F4E78C19F99B8978861DD /* Pods_NewsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		CED193182557DEE100040A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED1931E2557E25D00040A64 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		CED193202557E27800040A64 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		CED193232557E38B00040A64 /* Rambafile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rambafile; sourceTree = "<group>"; };
+		CED193252557E4B600040A64 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 		CED192FC2557DEE000040A64 = {
 			isa = PBXGroup;
 			children = (
+				CED193252557E4B600040A64 /* .gitignore */,
+				CED193232557E38B00040A64 /* Rambafile */,
 				CED1931E2557E25D00040A64 /* Podfile */,
 				CED193202557E27800040A64 /* .swiftlint.yml */,
 				CED193072557DEE000040A64 /* NewsApp */,
@@ -162,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED193212557E27800040A64 /* .swiftlint.yml in Resources */,
+				CED193262557E4B600040A64 /* .gitignore in Resources */,
 				CED193172557DEE100040A64 /* LaunchScreen.storyboard in Resources */,
+				CED193242557E38B00040A64 /* Rambafile in Resources */,
 				CED193142557DEE100040A64 /* Assets.xcassets in Resources */,
 				CED1931F2557E25D00040A64 /* Podfile in Resources */,
 				CED193122557DEE000040A64 /* Main.storyboard in Resources */,

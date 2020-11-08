@@ -1,0 +1,50 @@
+### Headers settings
+company: Orion Innovation
+
+### Xcode project settings
+project_name: NewsApp
+xcodeproj_path: NewsApp.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: NewsApp
+
+### Tests generation settings section
+# The tests target name
+test_target: NewsApp
+
+# The file path for new modules
+project_file_path: NewsApp/Modules
+
+# The Xcode group path to new modules
+project_group_path: NewsApp/Modules
+
+# The file path for new tests
+test_file_path: NewsApp/Tests
+
+# The Xcode group path to new tests
+test_group_path: NewsApp/Tests
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+templates:
+#- {name: local_template_name, local: 'absolute/file/path'}
+#- {name: remote_template_name, git: 'https://github.com/igrekde/remote_template'}
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: adkrviper_controller}
+- {name: championat_viper}
+- {name: swifty_viper}
+- {name: swifty_viper_OSX}
+
+
+
+#catalogs:
+#- 'https://github.com/rambler-digital-solutions/generamba-catalog'
+#- 'https://github.com/igrekde/my-own-catalog'
+#templates:
+#- {name: rviper_controller}
+#- {name: local_template_name, local: 'absolute/file/path'}
+#- {name: remote_template_name, git: 'https://github.com/igrekde/remote_template'}
