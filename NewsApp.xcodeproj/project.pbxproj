@@ -8,48 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		0B180D18215AC4F0784B344E /* ReadViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED140C14B5C2478353005B71 /* ReadViewInput.swift */; };
-		0F88E3FF072638F9E1A1B226 /* DailyPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB85207527ED45AFF461B2 /* DailyPresenterTests.swift */; };
 		16741191B90201F0C41DF782 /* DailyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B90905210945F54AF2698E3 /* DailyInteractor.swift */; };
 		1A4711823E433855843F373A /* BookmarksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDD43EED7C202EE0D6F4AFE /* BookmarksRouter.swift */; };
 		1F4A1A4C528614DF902786AA /* BookmarksModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25F698C5DAAF3CB9B9A156 /* BookmarksModuleInput.swift */; };
 		206D0DC14C7A240D24950BD7 /* ReadInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB2CF1BF9462485CA179044 /* ReadInitializer.swift */; };
-		24369DFFC4633E24A1B05871 /* ReadPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BEE1D34993D6D9DABCEC01 /* ReadPresenterTests.swift */; };
 		29451564248B19930F2A8F46 /* BookmarksInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079384351A495E0C035ECB6 /* BookmarksInitializer.swift */; };
 		2D81823C84BCD2741D9F8E22 /* DailyInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F7CC605011508DF35DF8B /* DailyInteractorOutput.swift */; };
 		3116BB56E87E599C9FA8B667 /* ReadInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C6A33A70D97F8D59D3D703 /* ReadInteractor.swift */; };
 		324B90D462C97A6A81CDD572 /* ReadViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A66DD04FEA45BECF9235B /* ReadViewOutput.swift */; };
-		342159A9A35A26E6FCA7BAB6 /* BookmarksInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFB8A2ADF6F9EF9B9A22A8E /* BookmarksInteractorTests.swift */; };
 		34CE76B410B06D8E713BA17C /* BookmarksConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851E28A4249254C91CD8FB09 /* BookmarksConfigurator.swift */; };
-		393465306FD2A3E49099A9E6 /* DailyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FA98FFB977F36E1C2372C /* DailyViewTests.swift */; };
-		3EF6543951DD395FC25D1645 /* SearchInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A27C55A155E7E08E73D072 /* SearchInteractorTests.swift */; };
 		432A9DB01796FB17811FD506 /* DailyViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2BDA58A852C68C4A9DB5C /* DailyViewOutput.swift */; };
 		47F85D6DEB781EA48B792AD1 /* ReadConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4596B7B0727C807C0D0B6 /* ReadConfigurator.swift */; };
 		4DEA1B1800F570B5BA6E8F1E /* BookmarksViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0094E235B0C5E11CDAC1FC7 /* BookmarksViewOutput.swift */; };
-		4F09856D7E52EB6D70E6B312 /* DailyRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB41301A2F344AB95D58E1 /* DailyRouterTests.swift */; };
-		4F6650331669FB4D17F7E895 /* SearchRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC134FBDAF8AEC88FE65E7 /* SearchRouterTests.swift */; };
-		535DD6CF89A949B42EA9C2BB /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11576E56C3976B848F62ADA5 /* SearchViewTests.swift */; };
 		5360B14DCD66DF13DFD7AD98 /* BookmarksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C17E996DBF955C3FAE21AE /* BookmarksInteractor.swift */; };
 		59E44B424E03C286CC8658E8 /* SearchRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB24B76D319125634B76E7F /* SearchRouterInput.swift */; };
 		5EE27DC70AA8CFAB99624467 /* DailyInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C534F573CC27C25B6B5577AF /* DailyInteractorInput.swift */; };
-		5FC6E28B20878860D4055C2D /* ReadRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD56FA665E31A544E270548 /* ReadRouterTests.swift */; };
-		645DD343BB72716AE3397005 /* DailyConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40DE6CF4F72A7D28C421E7 /* DailyConfiguratorTests.swift */; };
 		68B6262E9A3ADC90BD42FC80 /* ReadRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A79C244868E511F4F75F35 /* ReadRouterInput.swift */; };
-		719211EE441A9D00C4B8C4B3 /* ReadInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745DDED01577968B046638B /* ReadInteractorTests.swift */; };
-		723F8004AAA8E2954A5B2DEA /* ReadViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F59B4752D32457A0ABC768 /* ReadViewTests.swift */; };
 		76D2D6E8E3A7AC2FA68A70D3 /* SearchViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E361314889F19EAA7AB63DC /* SearchViewInput.swift */; };
-		771FA0F4B7FEB396ECD8F271 /* BookmarksViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C303386D2DB8A832FB2A4 /* BookmarksViewTests.swift */; };
 		7AB408C521E2FBB000725BD7 /* BookmarksInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA173137A924225C1393632 /* BookmarksInteractorOutput.swift */; };
 		7B78C59B9D3A34CFA3792C1E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A4C440D21E142CF435727 /* SearchViewController.swift */; };
-		7FC3F52325D8D3C2FEE023CA /* ReadConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5FF776EEBC11A99D2D591 /* ReadConfiguratorTests.swift */; };
 		80CEF497FBC3D209643A78CF /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F664BFCBCAA8FA8239EDEB /* SearchInteractor.swift */; };
 		860147652DD68B5DD97136FF /* BookmarksViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A6C7A7DCEBB3F6C7E508CF /* BookmarksViewInput.swift */; };
-		8E1203647323B3C0F1081F27 /* BookmarksConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57386623CF3E14885DC7EEA /* BookmarksConfiguratorTests.swift */; };
 		90439CDF101D5E2AB7C2E6DA /* DailyViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007E5AEAA81DD9AD4EBCB4B /* DailyViewInput.swift */; };
 		960D382BB0FEB8ACF191A81A /* SearchModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19273753890A6FA6BE4AAA9 /* SearchModuleInput.swift */; };
 		9A3C478B74A0D638916AB99C /* BookmarksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9210F7461B65B127C080D /* BookmarksPresenter.swift */; };
 		9C4C24D0BBD6D16C863405DE /* ReadInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D690AC05591BEA91191A37D /* ReadInteractorInput.swift */; };
 		9FA501D71924EFDEF6499FE0 /* BookmarksRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0CCD5925DE656F17BBECD /* BookmarksRouterInput.swift */; };
-		A31FC2955C5409163F5F66C4 /* BookmarksRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A03200C211692F9F75E5F /* BookmarksRouterTests.swift */; };
 		AB5370139336B77182F9DD7C /* SearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8255F483FEDF7C84C50EC /* SearchConfigurator.swift */; };
 		AE0E38D6C09923A94FBF56AD /* DailyModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0C26D772B3A696D80049E2 /* DailyModuleInput.swift */; };
 		B48499910682058D13C27783 /* DailyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B25D3EB89029585B5768A /* DailyPresenter.swift */; };
@@ -59,6 +43,30 @@
 		C1788EA188F2290E5E001BBB /* SearchInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498732D651236F16BCEE03F /* SearchInitializer.swift */; };
 		C1A69094CFD398C25345220C /* SearchInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C2E22C3C00E41E3AB38B2 /* SearchInteractorInput.swift */; };
 		C81DCCA964F6137F6C7494ED /* ReadPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E2CBDD0704E2824B41F0F4 /* ReadPresenter.swift */; };
+		CE764D2F2557FEE10002FF3C /* FilterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764D2C2557FEE10002FF3C /* FilterData.swift */; };
+		CE764D302557FEE10002FF3C /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764D2D2557FEE10002FF3C /* StringHelper.swift */; };
+		CE764D312557FEE10002FF3C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764D2E2557FEE10002FF3C /* News.swift */; };
+		CE764D45255807F10002FF3C /* NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764D44255807F10002FF3C /* NewsAppTests.swift */; };
+		CE764D4C255808F20002FF3C /* DailyConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40DE6CF4F72A7D28C421E7 /* DailyConfiguratorTests.swift */; };
+		CE764D4D255808F90002FF3C /* DailyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FA98FFB977F36E1C2372C /* DailyViewTests.swift */; };
+		CE764D4E255808FE0002FF3C /* DailyInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1D75A72AAF4EB6D4B5C84 /* DailyInteractorTests.swift */; };
+		CE764D4F255809020002FF3C /* DailyPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB85207527ED45AFF461B2 /* DailyPresenterTests.swift */; };
+		CE764D50255809080002FF3C /* DailyRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB41301A2F344AB95D58E1 /* DailyRouterTests.swift */; };
+		CE764D512558090E0002FF3C /* SearchConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B892627DDEA3E9DFC7B44 /* SearchConfiguratorTests.swift */; };
+		CE764D52255809120002FF3C /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11576E56C3976B848F62ADA5 /* SearchViewTests.swift */; };
+		CE764D53255809170002FF3C /* SearchInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A27C55A155E7E08E73D072 /* SearchInteractorTests.swift */; };
+		CE764D542558091B0002FF3C /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363172241AC98BD3A1A9BB4 /* SearchPresenterTests.swift */; };
+		CE764D55255809220002FF3C /* SearchRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC134FBDAF8AEC88FE65E7 /* SearchRouterTests.swift */; };
+		CE764D56255809290002FF3C /* ReadConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5FF776EEBC11A99D2D591 /* ReadConfiguratorTests.swift */; };
+		CE764D572558092E0002FF3C /* ReadViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F59B4752D32457A0ABC768 /* ReadViewTests.swift */; };
+		CE764D58255809330002FF3C /* ReadInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745DDED01577968B046638B /* ReadInteractorTests.swift */; };
+		CE764D59255809370002FF3C /* ReadPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BEE1D34993D6D9DABCEC01 /* ReadPresenterTests.swift */; };
+		CE764D5A2558093B0002FF3C /* ReadRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD56FA665E31A544E270548 /* ReadRouterTests.swift */; };
+		CE764D5B255809410002FF3C /* BookmarksConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57386623CF3E14885DC7EEA /* BookmarksConfiguratorTests.swift */; };
+		CE764D5C255809480002FF3C /* BookmarksViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C303386D2DB8A832FB2A4 /* BookmarksViewTests.swift */; };
+		CE764D5D2558094D0002FF3C /* BookmarksInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFB8A2ADF6F9EF9B9A22A8E /* BookmarksInteractorTests.swift */; };
+		CE764D5E255809520002FF3C /* BookmarksPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E52339F21EC32704A3FDC /* BookmarksPresenterTests.swift */; };
+		CE764D5F255809590002FF3C /* BookmarksRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A03200C211692F9F75E5F /* BookmarksRouterTests.swift */; };
 		CED193092557DEE000040A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED193082557DEE000040A64 /* AppDelegate.swift */; };
 		CED1930B2557DEE000040A64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1930A2557DEE000040A64 /* SceneDelegate.swift */; };
 		CED1930D2557DEE000040A64 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1930C2557DEE000040A64 /* FirstViewController.swift */; };
@@ -76,18 +84,24 @@
 		E395DD8FEE3411B7C2C8E985 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24539EE82457675D0EB4477D /* DailyViewController.swift */; };
 		E3A4F5477F88974885DB7A2C /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A200B08FACC6E45881CF22 /* BookmarksViewController.swift */; };
 		E8334B739DDD3EFABF245C78 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346803F51C93AEA4AFC42D7 /* ReadViewController.swift */; };
-		EB185C8B03340EA9FB362B37 /* BookmarksPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E52339F21EC32704A3FDC /* BookmarksPresenterTests.swift */; };
-		EC64BAE55A9A6EF86C4750B3 /* DailyInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1D75A72AAF4EB6D4B5C84 /* DailyInteractorTests.swift */; };
 		F3E0931EC22A4883E1AA7A38 /* SearchViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB6EB4D3009A9542615D93 /* SearchViewOutput.swift */; };
-		F523E87875A332298736F2B5 /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363172241AC98BD3A1A9BB4 /* SearchPresenterTests.swift */; };
 		F5BC00D8BB8DDAF747F00218 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE01FF4BECD5B208DFFEDB /* SearchRouter.swift */; };
 		F696B3B090A930C8C4C0F09F /* ReadModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F9A118F33A4D85677C0FC /* ReadModuleInput.swift */; };
 		F85669EC1DE5E024D7509450 /* Pods_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452F4E78C19F99B8978861DD /* Pods_NewsApp.framework */; };
 		FA3194BFB5CC7A371FAD88E1 /* DailyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78C929CC08C7CA069206D66 /* DailyRouter.swift */; };
 		FD0C905C30DFCDA3F45B72AB /* DailyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7828946B1728B6E049AE7F /* DailyConfigurator.swift */; };
 		FEAEED1C34763566FB8AC2B7 /* BookmarksInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9BC8FEA51846CA29BF03E4 /* BookmarksInteractorInput.swift */; };
-		FF2F863427C2544767C02EFE /* SearchConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B892627DDEA3E9DFC7B44 /* SearchConfiguratorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE764D47255807F10002FF3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED192FD2557DEE000040A64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED193042557DEE000040A64;
+			remoteInfo = NewsApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C7A4C440D21E142CF435727 /* SearchViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +163,13 @@
 		C2F664BFCBCAA8FA8239EDEB /* SearchInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 		C534F573CC27C25B6B5577AF /* DailyInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyInteractorInput.swift; sourceTree = "<group>"; };
 		CB6A66DD04FEA45BECF9235B /* ReadViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadViewOutput.swift; sourceTree = "<group>"; };
+		CE764D2C2557FEE10002FF3C /* FilterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterData.swift; sourceTree = "<group>"; };
+		CE764D2D2557FEE10002FF3C /* StringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		CE764D2E2557FEE10002FF3C /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		CE764D39255806C00002FF3C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CE764D42255807F10002FF3C /* NewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE764D44255807F10002FF3C /* NewsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppTests.swift; sourceTree = "<group>"; };
+		CE764D46255807F10002FF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED193052557DEE000040A64 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED193082557DEE000040A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED1930A2557DEE000040A64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +198,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE764D3F255807F10002FF3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CED193022557DEE000040A64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,7 +223,6 @@
 				25D2BDA58A852C68C4A9DB5C /* DailyViewOutput.swift */,
 				24539EE82457675D0EB4477D /* DailyViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -204,7 +231,6 @@
 			children = (
 				DCE5FF776EEBC11A99D2D591 /* ReadConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -213,11 +239,10 @@
 			children = (
 				A57386623CF3E14885DC7EEA /* BookmarksConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
-		1037E484551275E74C97332F /* Tests */ = {
+		1037E484551275E74C97332F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				F1D23E8FCD3F20FE28083825 /* Daily */,
@@ -225,8 +250,7 @@
 				6E3B6771B396FB5AD24C624D /* Read */,
 				6C8EA642AFB3AEA02EB2F48C /* Bookmarks */,
 			);
-			name = Tests;
-			path = Tests;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		206CA2DFF20E19361F8B3B03 /* View */ = {
@@ -236,7 +260,6 @@
 				CB6A66DD04FEA45BECF9235B /* ReadViewOutput.swift */,
 				3346803F51C93AEA4AFC42D7 /* ReadViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -249,7 +272,6 @@
 				DA43C7ABB4740E5569898C4E /* Presenter */,
 				F569C1A7482E9245D9624B38 /* Router */,
 			);
-			name = Search;
 			path = Search;
 			sourceTree = "<group>";
 		};
@@ -259,7 +281,6 @@
 				1FB24B76D319125634B76E7F /* SearchRouterInput.swift */,
 				7ECE01FF4BECD5B208DFFEDB /* SearchRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -278,7 +299,6 @@
 				0DF0CCD5925DE656F17BBECD /* BookmarksRouterInput.swift */,
 				9BDD43EED7C202EE0D6F4AFE /* BookmarksRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -291,7 +311,6 @@
 				D2C957343F862FE1D57E04CA /* Router */,
 				7AC4F6CBEEAF40C988AD3896 /* Configurator */,
 			);
-			name = Read;
 			path = Read;
 			sourceTree = "<group>";
 		};
@@ -300,7 +319,6 @@
 			children = (
 				5C5C303386D2DB8A832FB2A4 /* BookmarksViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -309,7 +327,6 @@
 			children = (
 				7AFB8A2ADF6F9EF9B9A22A8E /* BookmarksInteractorTests.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -320,7 +337,6 @@
 				23BB6EB4D3009A9542615D93 /* SearchViewOutput.swift */,
 				0C7A4C440D21E142CF435727 /* SearchViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -330,7 +346,6 @@
 				998F9A118F33A4D85677C0FC /* ReadModuleInput.swift */,
 				A4E2CBDD0704E2824B41F0F4 /* ReadPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -341,7 +356,6 @@
 				7BA173137A924225C1393632 /* BookmarksInteractorOutput.swift */,
 				D3C17E996DBF955C3FAE21AE /* BookmarksInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -351,7 +365,6 @@
 				2A0C26D772B3A696D80049E2 /* DailyModuleInput.swift */,
 				2F6B25D3EB89029585B5768A /* DailyPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -360,7 +373,6 @@
 			children = (
 				B47A03200C211692F9F75E5F /* BookmarksRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -369,7 +381,6 @@
 			children = (
 				E5F59B4752D32457A0ABC768 /* ReadViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -382,7 +393,6 @@
 				D34E5A85D406BDC4B4322046 /* Presenter */,
 				694BECC5A9A57412D3CBCF5D /* Router */,
 			);
-			name = Bookmarks;
 			path = Bookmarks;
 			sourceTree = "<group>";
 		};
@@ -394,7 +404,6 @@
 				47197F6A2118EBF2AC468E70 /* Read */,
 				98E238D154C28EDBDB358BF2 /* Bookmarks */,
 			);
-			name = Modules;
 			path = Modules;
 			sourceTree = "<group>";
 		};
@@ -407,7 +416,6 @@
 				971E98286FCBD9E81DD845E0 /* Presenter */,
 				E3844C272FD884841B47A9C6 /* Router */,
 			);
-			name = Read;
 			path = Read;
 			sourceTree = "<group>";
 		};
@@ -417,7 +425,6 @@
 				79C4596B7B0727C807C0D0B6 /* ReadConfigurator.swift */,
 				1FB2CF1BF9462485CA179044 /* ReadInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -428,7 +435,6 @@
 				85DDBE7534C7732A55450B20 /* SearchInteractorOutput.swift */,
 				C2F664BFCBCAA8FA8239EDEB /* SearchInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -438,13 +444,13 @@
 				AC25F698C5DAAF3CB9B9A156 /* BookmarksModuleInput.swift */,
 				89E9210F7461B65B127C080D /* BookmarksPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
 		841D67E29C1A1D51655839E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE764D39255806C00002FF3C /* XCTest.framework */,
 				452F4E78C19F99B8978861DD /* Pods_NewsApp.framework */,
 			);
 			name = Frameworks;
@@ -457,7 +463,6 @@
 				E0094E235B0C5E11CDAC1FC7 /* BookmarksViewOutput.swift */,
 				20A200B08FACC6E45881CF22 /* BookmarksViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -466,7 +471,6 @@
 			children = (
 				4F40DE6CF4F72A7D28C421E7 /* DailyConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -475,7 +479,6 @@
 			children = (
 				4745DDED01577968B046638B /* ReadInteractorTests.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -484,7 +487,6 @@
 			children = (
 				E9BEE1D34993D6D9DABCEC01 /* ReadPresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -497,7 +499,6 @@
 				41B122D7CAE4C069A4BE42DA /* Router */,
 				FB3E3C1167BAEB6483411726 /* Configurator */,
 			);
-			name = Bookmarks;
 			path = Bookmarks;
 			sourceTree = "<group>";
 		};
@@ -506,7 +507,6 @@
 			children = (
 				544FA98FFB977F36E1C2372C /* DailyViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -515,7 +515,6 @@
 			children = (
 				67A27C55A155E7E08E73D072 /* SearchInteractorTests.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -524,7 +523,6 @@
 			children = (
 				75D1D75A72AAF4EB6D4B5C84 /* DailyInteractorTests.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -533,7 +531,6 @@
 			children = (
 				817B892627DDEA3E9DFC7B44 /* SearchConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -543,7 +540,6 @@
 				E087B095886A727AA39B8433 /* DailyRouterInput.swift */,
 				E78C929CC08C7CA069206D66 /* DailyRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -556,7 +552,6 @@
 				AD0DC5E3597970DD76A1811C /* Router */,
 				E4BDCD12A35FE6A13DB2E8E1 /* Configurator */,
 			);
-			name = Daily;
 			path = Daily;
 			sourceTree = "<group>";
 		};
@@ -566,7 +561,6 @@
 				A19273753890A6FA6BE4AAA9 /* SearchModuleInput.swift */,
 				27D1DD031EE7BC0A8EFC3C62 /* SearchPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -579,7 +573,6 @@
 				2F8507EA0A42AA027930AFDF /* Router */,
 				F5851778C65206E696A9F179 /* Configurator */,
 			);
-			name = Search;
 			path = Search;
 			sourceTree = "<group>";
 		};
@@ -588,8 +581,27 @@
 			children = (
 				11576E56C3976B848F62ADA5 /* SearchViewTests.swift */,
 			);
-			name = View;
 			path = View;
+			sourceTree = "<group>";
+		};
+		CE764D2B2557FE930002FF3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE764D2C2557FEE10002FF3C /* FilterData.swift */,
+				CE764D2E2557FEE10002FF3C /* News.swift */,
+				CE764D2D2557FEE10002FF3C /* StringHelper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE764D43255807F10002FF3C /* NewsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE764D44255807F10002FF3C /* NewsAppTests.swift */,
+				1037E484551275E74C97332F /* Modules */,
+				CE764D46255807F10002FF3C /* Info.plist */,
+			);
+			path = NewsAppTests;
 			sourceTree = "<group>";
 		};
 		CED192FC2557DEE000040A64 = {
@@ -600,6 +612,7 @@
 				CED1931E2557E25D00040A64 /* Podfile */,
 				CED193202557E27800040A64 /* .swiftlint.yml */,
 				CED193072557DEE000040A64 /* NewsApp */,
+				CE764D43255807F10002FF3C /* NewsAppTests */,
 				CED193062557DEE000040A64 /* Products */,
 				3F976D730977FCB91D4269CB /* Pods */,
 				841D67E29C1A1D51655839E5 /* Frameworks */,
@@ -610,6 +623,7 @@
 			isa = PBXGroup;
 			children = (
 				CED193052557DEE000040A64 /* NewsApp.app */,
+				CE764D42255807F10002FF3C /* NewsAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -625,8 +639,8 @@
 				CED193132557DEE100040A64 /* Assets.xcassets */,
 				CED193152557DEE100040A64 /* LaunchScreen.storyboard */,
 				CED193182557DEE100040A64 /* Info.plist */,
+				CE764D2B2557FE930002FF3C /* Models */,
 				6E36D784C4535ACAE4A376B1 /* Modules */,
-				1037E484551275E74C97332F /* Tests */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -638,7 +652,6 @@
 				220F7CC605011508DF35DF8B /* DailyInteractorOutput.swift */,
 				3B90905210945F54AF2698E3 /* DailyInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -648,7 +661,6 @@
 				D8A79C244868E511F4F75F35 /* ReadRouterInput.swift */,
 				520D10A81DA0C87A5F28BA32 /* ReadRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -657,7 +669,6 @@
 			children = (
 				464E52339F21EC32704A3FDC /* BookmarksPresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -668,7 +679,6 @@
 				4FCCE2A853A168E3A765106D /* ReadInteractorOutput.swift */,
 				D3C6A33A70D97F8D59D3D703 /* ReadInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -677,7 +687,6 @@
 			children = (
 				2363172241AC98BD3A1A9BB4 /* SearchPresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -686,7 +695,6 @@
 			children = (
 				9BD56FA665E31A544E270548 /* ReadRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -696,7 +704,6 @@
 				6B7828946B1728B6E049AE7F /* DailyConfigurator.swift */,
 				25BDF8F0431B4D2ADFFF8D03 /* DailyInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -705,7 +712,6 @@
 			children = (
 				5BCB41301A2F344AB95D58E1 /* DailyRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -718,7 +724,6 @@
 				FE554FD7338D0B88BB342480 /* Presenter */,
 				E6828B3CC9B781EBE8E903CD /* Router */,
 			);
-			name = Daily;
 			path = Daily;
 			sourceTree = "<group>";
 		};
@@ -727,7 +732,6 @@
 			children = (
 				B3FC134FBDAF8AEC88FE65E7 /* SearchRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -737,7 +741,6 @@
 				81E8255F483FEDF7C84C50EC /* SearchConfigurator.swift */,
 				F498732D651236F16BCEE03F /* SearchInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -747,7 +750,6 @@
 				851E28A4249254C91CD8FB09 /* BookmarksConfigurator.swift */,
 				F079384351A495E0C035ECB6 /* BookmarksInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -756,13 +758,30 @@
 			children = (
 				7FFB85207527ED45AFF461B2 /* DailyPresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE764D41255807F10002FF3C /* NewsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE764D49255807F10002FF3C /* Build configuration list for PBXNativeTarget "NewsAppTests" */;
+			buildPhases = (
+				CE764D3E255807F10002FF3C /* Sources */,
+				CE764D3F255807F10002FF3C /* Frameworks */,
+				CE764D40255807F10002FF3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE764D48255807F10002FF3C /* PBXTargetDependency */,
+			);
+			name = NewsAppTests;
+			productName = NewsAppTests;
+			productReference = CE764D42255807F10002FF3C /* NewsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CED193042557DEE000040A64 /* NewsApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CED1931B2557DEE100040A64 /* Build configuration list for PBXNativeTarget "NewsApp" */;
@@ -793,6 +812,10 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Orion Innovation";
 				TargetAttributes = {
+					CE764D41255807F10002FF3C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CED193042557DEE000040A64;
+					};
 					CED193042557DEE000040A64 = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -812,11 +835,19 @@
 			projectRoot = "";
 			targets = (
 				CED193042557DEE000040A64 /* NewsApp */,
+				CE764D41255807F10002FF3C /* NewsAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE764D40255807F10002FF3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CED193032557DEE000040A64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -894,6 +925,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE764D3E255807F10002FF3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE764D5A2558093B0002FF3C /* ReadRouterTests.swift in Sources */,
+				CE764D55255809220002FF3C /* SearchRouterTests.swift in Sources */,
+				CE764D4F255809020002FF3C /* DailyPresenterTests.swift in Sources */,
+				CE764D4C255808F20002FF3C /* DailyConfiguratorTests.swift in Sources */,
+				CE764D50255809080002FF3C /* DailyRouterTests.swift in Sources */,
+				CE764D58255809330002FF3C /* ReadInteractorTests.swift in Sources */,
+				CE764D4D255808F90002FF3C /* DailyViewTests.swift in Sources */,
+				CE764D572558092E0002FF3C /* ReadViewTests.swift in Sources */,
+				CE764D52255809120002FF3C /* SearchViewTests.swift in Sources */,
+				CE764D5B255809410002FF3C /* BookmarksConfiguratorTests.swift in Sources */,
+				CE764D59255809370002FF3C /* ReadPresenterTests.swift in Sources */,
+				CE764D53255809170002FF3C /* SearchInteractorTests.swift in Sources */,
+				CE764D542558091B0002FF3C /* SearchPresenterTests.swift in Sources */,
+				CE764D56255809290002FF3C /* ReadConfiguratorTests.swift in Sources */,
+				CE764D512558090E0002FF3C /* SearchConfiguratorTests.swift in Sources */,
+				CE764D4E255808FE0002FF3C /* DailyInteractorTests.swift in Sources */,
+				CE764D5E255809520002FF3C /* BookmarksPresenterTests.swift in Sources */,
+				CE764D5D2558094D0002FF3C /* BookmarksInteractorTests.swift in Sources */,
+				CE764D5C255809480002FF3C /* BookmarksViewTests.swift in Sources */,
+				CE764D45255807F10002FF3C /* NewsAppTests.swift in Sources */,
+				CE764D5F255809590002FF3C /* BookmarksRouterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CED193012557DEE000040A64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -914,11 +973,7 @@
 				FA3194BFB5CC7A371FAD88E1 /* DailyRouter.swift in Sources */,
 				FD0C905C30DFCDA3F45B72AB /* DailyConfigurator.swift in Sources */,
 				B90749C3116D03CBACFE94A3 /* DailyInitializer.swift in Sources */,
-				645DD343BB72716AE3397005 /* DailyConfiguratorTests.swift in Sources */,
-				393465306FD2A3E49099A9E6 /* DailyViewTests.swift in Sources */,
-				EC64BAE55A9A6EF86C4750B3 /* DailyInteractorTests.swift in Sources */,
-				0F88E3FF072638F9E1A1B226 /* DailyPresenterTests.swift in Sources */,
-				4F09856D7E52EB6D70E6B312 /* DailyRouterTests.swift in Sources */,
+				CE764D312557FEE10002FF3C /* News.swift in Sources */,
 				76D2D6E8E3A7AC2FA68A70D3 /* SearchViewInput.swift in Sources */,
 				F3E0931EC22A4883E1AA7A38 /* SearchViewOutput.swift in Sources */,
 				7B78C59B9D3A34CFA3792C1E /* SearchViewController.swift in Sources */,
@@ -931,11 +986,6 @@
 				F5BC00D8BB8DDAF747F00218 /* SearchRouter.swift in Sources */,
 				AB5370139336B77182F9DD7C /* SearchConfigurator.swift in Sources */,
 				C1788EA188F2290E5E001BBB /* SearchInitializer.swift in Sources */,
-				FF2F863427C2544767C02EFE /* SearchConfiguratorTests.swift in Sources */,
-				535DD6CF89A949B42EA9C2BB /* SearchViewTests.swift in Sources */,
-				3EF6543951DD395FC25D1645 /* SearchInteractorTests.swift in Sources */,
-				F523E87875A332298736F2B5 /* SearchPresenterTests.swift in Sources */,
-				4F6650331669FB4D17F7E895 /* SearchRouterTests.swift in Sources */,
 				0B180D18215AC4F0784B344E /* ReadViewInput.swift in Sources */,
 				324B90D462C97A6A81CDD572 /* ReadViewOutput.swift in Sources */,
 				E8334B739DDD3EFABF245C78 /* ReadViewController.swift in Sources */,
@@ -948,11 +998,7 @@
 				DD507F2484B9A98E2B602C97 /* ReadRouter.swift in Sources */,
 				47F85D6DEB781EA48B792AD1 /* ReadConfigurator.swift in Sources */,
 				206D0DC14C7A240D24950BD7 /* ReadInitializer.swift in Sources */,
-				7FC3F52325D8D3C2FEE023CA /* ReadConfiguratorTests.swift in Sources */,
-				723F8004AAA8E2954A5B2DEA /* ReadViewTests.swift in Sources */,
-				719211EE441A9D00C4B8C4B3 /* ReadInteractorTests.swift in Sources */,
-				24369DFFC4633E24A1B05871 /* ReadPresenterTests.swift in Sources */,
-				5FC6E28B20878860D4055C2D /* ReadRouterTests.swift in Sources */,
+				CE764D302557FEE10002FF3C /* StringHelper.swift in Sources */,
 				860147652DD68B5DD97136FF /* BookmarksViewInput.swift in Sources */,
 				4DEA1B1800F570B5BA6E8F1E /* BookmarksViewOutput.swift in Sources */,
 				E3A4F5477F88974885DB7A2C /* BookmarksViewController.swift in Sources */,
@@ -963,17 +1009,21 @@
 				5360B14DCD66DF13DFD7AD98 /* BookmarksInteractor.swift in Sources */,
 				9FA501D71924EFDEF6499FE0 /* BookmarksRouterInput.swift in Sources */,
 				1A4711823E433855843F373A /* BookmarksRouter.swift in Sources */,
+				CE764D2F2557FEE10002FF3C /* FilterData.swift in Sources */,
 				34CE76B410B06D8E713BA17C /* BookmarksConfigurator.swift in Sources */,
 				29451564248B19930F2A8F46 /* BookmarksInitializer.swift in Sources */,
-				8E1203647323B3C0F1081F27 /* BookmarksConfiguratorTests.swift in Sources */,
-				771FA0F4B7FEB396ECD8F271 /* BookmarksViewTests.swift in Sources */,
-				342159A9A35A26E6FCA7BAB6 /* BookmarksInteractorTests.swift in Sources */,
-				EB185C8B03340EA9FB362B37 /* BookmarksPresenterTests.swift in Sources */,
-				A31FC2955C5409163F5F66C4 /* BookmarksRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE764D48255807F10002FF3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED193042557DEE000040A64 /* NewsApp */;
+			targetProxy = CE764D47255807F10002FF3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CED193102557DEE000040A64 /* Main.storyboard */ = {
@@ -995,6 +1045,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE764D4A255807F10002FF3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DH352K3484;
+				INFOPLIST_FILE = NewsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oi.NewsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsApp.app/NewsApp";
+			};
+			name = Debug;
+		};
+		CE764D4B255807F10002FF3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DH352K3484;
+				INFOPLIST_FILE = NewsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oi.NewsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsApp.app/NewsApp";
+			};
+			name = Release;
+		};
 		CED193192557DEE100040A64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1150,6 +1240,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE764D49255807F10002FF3C /* Build configuration list for PBXNativeTarget "NewsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE764D4A255807F10002FF3C /* Debug */,
+				CE764D4B255807F10002FF3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CED193002557DEE000040A64 /* Build configuration list for PBXProject "NewsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

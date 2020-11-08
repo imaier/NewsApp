@@ -10,4 +10,15 @@ class DailyInteractor: DailyInteractorInput {
 
     weak var output: DailyInteractorOutput!
 
+    
+    
+    // MARK:- DailyInteractorInput
+    func getTopStories() {
+        
+    }
+    
+    func getLatestNews() {
+        
+    }
+    
 }

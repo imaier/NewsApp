@@ -20,10 +20,10 @@ project_file_path: NewsApp/Modules
 project_group_path: NewsApp/Modules
 
 # The file path for new tests
-test_file_path: NewsApp/Tests
+test_file_path: NewsAppTests/Modules
 
 # The Xcode group path to new tests
-test_group_path: NewsApp/Tests
+test_group_path: NewsAppTests/Modules
 
 ### Dependencies settings section
 podfile_path: Podfile
