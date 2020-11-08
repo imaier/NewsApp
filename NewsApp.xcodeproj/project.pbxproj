@@ -7,6 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B180D18215AC4F0784B344E /* ReadViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED140C14B5C2478353005B71 /* ReadViewInput.swift */; };
+		0F88E3FF072638F9E1A1B226 /* DailyPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB85207527ED45AFF461B2 /* DailyPresenterTests.swift */; };
+		16741191B90201F0C41DF782 /* DailyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B90905210945F54AF2698E3 /* DailyInteractor.swift */; };
+		1A4711823E433855843F373A /* BookmarksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDD43EED7C202EE0D6F4AFE /* BookmarksRouter.swift */; };
+		1F4A1A4C528614DF902786AA /* BookmarksModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25F698C5DAAF3CB9B9A156 /* BookmarksModuleInput.swift */; };
+		206D0DC14C7A240D24950BD7 /* ReadInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB2CF1BF9462485CA179044 /* ReadInitializer.swift */; };
+		24369DFFC4633E24A1B05871 /* ReadPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BEE1D34993D6D9DABCEC01 /* ReadPresenterTests.swift */; };
+		29451564248B19930F2A8F46 /* BookmarksInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079384351A495E0C035ECB6 /* BookmarksInitializer.swift */; };
+		2D81823C84BCD2741D9F8E22 /* DailyInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220F7CC605011508DF35DF8B /* DailyInteractorOutput.swift */; };
+		3116BB56E87E599C9FA8B667 /* ReadInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C6A33A70D97F8D59D3D703 /* ReadInteractor.swift */; };
+		324B90D462C97A6A81CDD572 /* ReadViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A66DD04FEA45BECF9235B /* ReadViewOutput.swift */; };
+		342159A9A35A26E6FCA7BAB6 /* BookmarksInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFB8A2ADF6F9EF9B9A22A8E /* BookmarksInteractorTests.swift */; };
+		34CE76B410B06D8E713BA17C /* BookmarksConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851E28A4249254C91CD8FB09 /* BookmarksConfigurator.swift */; };
+		393465306FD2A3E49099A9E6 /* DailyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544FA98FFB977F36E1C2372C /* DailyViewTests.swift */; };
+		3EF6543951DD395FC25D1645 /* SearchInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A27C55A155E7E08E73D072 /* SearchInteractorTests.swift */; };
+		432A9DB01796FB17811FD506 /* DailyViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2BDA58A852C68C4A9DB5C /* DailyViewOutput.swift */; };
+		47F85D6DEB781EA48B792AD1 /* ReadConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4596B7B0727C807C0D0B6 /* ReadConfigurator.swift */; };
+		4DEA1B1800F570B5BA6E8F1E /* BookmarksViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0094E235B0C5E11CDAC1FC7 /* BookmarksViewOutput.swift */; };
+		4F09856D7E52EB6D70E6B312 /* DailyRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB41301A2F344AB95D58E1 /* DailyRouterTests.swift */; };
+		4F6650331669FB4D17F7E895 /* SearchRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC134FBDAF8AEC88FE65E7 /* SearchRouterTests.swift */; };
+		535DD6CF89A949B42EA9C2BB /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11576E56C3976B848F62ADA5 /* SearchViewTests.swift */; };
+		5360B14DCD66DF13DFD7AD98 /* BookmarksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C17E996DBF955C3FAE21AE /* BookmarksInteractor.swift */; };
+		59E44B424E03C286CC8658E8 /* SearchRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB24B76D319125634B76E7F /* SearchRouterInput.swift */; };
+		5EE27DC70AA8CFAB99624467 /* DailyInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C534F573CC27C25B6B5577AF /* DailyInteractorInput.swift */; };
+		5FC6E28B20878860D4055C2D /* ReadRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD56FA665E31A544E270548 /* ReadRouterTests.swift */; };
+		645DD343BB72716AE3397005 /* DailyConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F40DE6CF4F72A7D28C421E7 /* DailyConfiguratorTests.swift */; };
+		68B6262E9A3ADC90BD42FC80 /* ReadRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A79C244868E511F4F75F35 /* ReadRouterInput.swift */; };
+		719211EE441A9D00C4B8C4B3 /* ReadInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745DDED01577968B046638B /* ReadInteractorTests.swift */; };
+		723F8004AAA8E2954A5B2DEA /* ReadViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F59B4752D32457A0ABC768 /* ReadViewTests.swift */; };
+		76D2D6E8E3A7AC2FA68A70D3 /* SearchViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E361314889F19EAA7AB63DC /* SearchViewInput.swift */; };
+		771FA0F4B7FEB396ECD8F271 /* BookmarksViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C303386D2DB8A832FB2A4 /* BookmarksViewTests.swift */; };
+		7AB408C521E2FBB000725BD7 /* BookmarksInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA173137A924225C1393632 /* BookmarksInteractorOutput.swift */; };
+		7B78C59B9D3A34CFA3792C1E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A4C440D21E142CF435727 /* SearchViewController.swift */; };
+		7FC3F52325D8D3C2FEE023CA /* ReadConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5FF776EEBC11A99D2D591 /* ReadConfiguratorTests.swift */; };
+		80CEF497FBC3D209643A78CF /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F664BFCBCAA8FA8239EDEB /* SearchInteractor.swift */; };
+		860147652DD68B5DD97136FF /* BookmarksViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A6C7A7DCEBB3F6C7E508CF /* BookmarksViewInput.swift */; };
+		8E1203647323B3C0F1081F27 /* BookmarksConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57386623CF3E14885DC7EEA /* BookmarksConfiguratorTests.swift */; };
+		90439CDF101D5E2AB7C2E6DA /* DailyViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007E5AEAA81DD9AD4EBCB4B /* DailyViewInput.swift */; };
+		960D382BB0FEB8ACF191A81A /* SearchModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19273753890A6FA6BE4AAA9 /* SearchModuleInput.swift */; };
+		9A3C478B74A0D638916AB99C /* BookmarksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9210F7461B65B127C080D /* BookmarksPresenter.swift */; };
+		9C4C24D0BBD6D16C863405DE /* ReadInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D690AC05591BEA91191A37D /* ReadInteractorInput.swift */; };
+		9FA501D71924EFDEF6499FE0 /* BookmarksRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF0CCD5925DE656F17BBECD /* BookmarksRouterInput.swift */; };
+		A31FC2955C5409163F5F66C4 /* BookmarksRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A03200C211692F9F75E5F /* BookmarksRouterTests.swift */; };
+		AB5370139336B77182F9DD7C /* SearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8255F483FEDF7C84C50EC /* SearchConfigurator.swift */; };
+		AE0E38D6C09923A94FBF56AD /* DailyModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0C26D772B3A696D80049E2 /* DailyModuleInput.swift */; };
+		B48499910682058D13C27783 /* DailyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B25D3EB89029585B5768A /* DailyPresenter.swift */; };
+		B5F1046955CFE55C2CAC15F0 /* SearchInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DDBE7534C7732A55450B20 /* SearchInteractorOutput.swift */; };
+		B7E35EA1C71C1275CD498CBA /* DailyRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087B095886A727AA39B8433 /* DailyRouterInput.swift */; };
+		B90749C3116D03CBACFE94A3 /* DailyInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BDF8F0431B4D2ADFFF8D03 /* DailyInitializer.swift */; };
+		C1788EA188F2290E5E001BBB /* SearchInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498732D651236F16BCEE03F /* SearchInitializer.swift */; };
+		C1A69094CFD398C25345220C /* SearchInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C2E22C3C00E41E3AB38B2 /* SearchInteractorInput.swift */; };
+		C81DCCA964F6137F6C7494ED /* ReadPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E2CBDD0704E2824B41F0F4 /* ReadPresenter.swift */; };
 		CED193092557DEE000040A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED193082557DEE000040A64 /* AppDelegate.swift */; };
 		CED1930B2557DEE000040A64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1930A2557DEE000040A64 /* SceneDelegate.swift */; };
 		CED1930D2557DEE000040A64 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1930C2557DEE000040A64 /* FirstViewController.swift */; };
@@ -18,13 +70,85 @@
 		CED193212557E27800040A64 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CED193202557E27800040A64 /* .swiftlint.yml */; };
 		CED193242557E38B00040A64 /* Rambafile in Resources */ = {isa = PBXBuildFile; fileRef = CED193232557E38B00040A64 /* Rambafile */; };
 		CED193262557E4B600040A64 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CED193252557E4B600040A64 /* .gitignore */; };
+		CFA4BE90DD13CEC18DDCF7A1 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D1DD031EE7BC0A8EFC3C62 /* SearchPresenter.swift */; };
+		DD507F2484B9A98E2B602C97 /* ReadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520D10A81DA0C87A5F28BA32 /* ReadRouter.swift */; };
+		E0407B7FB0E1A12B4C86D29D /* ReadInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCCE2A853A168E3A765106D /* ReadInteractorOutput.swift */; };
+		E395DD8FEE3411B7C2C8E985 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24539EE82457675D0EB4477D /* DailyViewController.swift */; };
+		E3A4F5477F88974885DB7A2C /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A200B08FACC6E45881CF22 /* BookmarksViewController.swift */; };
+		E8334B739DDD3EFABF245C78 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3346803F51C93AEA4AFC42D7 /* ReadViewController.swift */; };
+		EB185C8B03340EA9FB362B37 /* BookmarksPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E52339F21EC32704A3FDC /* BookmarksPresenterTests.swift */; };
+		EC64BAE55A9A6EF86C4750B3 /* DailyInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D1D75A72AAF4EB6D4B5C84 /* DailyInteractorTests.swift */; };
+		F3E0931EC22A4883E1AA7A38 /* SearchViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB6EB4D3009A9542615D93 /* SearchViewOutput.swift */; };
+		F523E87875A332298736F2B5 /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363172241AC98BD3A1A9BB4 /* SearchPresenterTests.swift */; };
+		F5BC00D8BB8DDAF747F00218 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE01FF4BECD5B208DFFEDB /* SearchRouter.swift */; };
+		F696B3B090A930C8C4C0F09F /* ReadModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F9A118F33A4D85677C0FC /* ReadModuleInput.swift */; };
 		F85669EC1DE5E024D7509450 /* Pods_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452F4E78C19F99B8978861DD /* Pods_NewsApp.framework */; };
+		FA3194BFB5CC7A371FAD88E1 /* DailyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78C929CC08C7CA069206D66 /* DailyRouter.swift */; };
+		FD0C905C30DFCDA3F45B72AB /* DailyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7828946B1728B6E049AE7F /* DailyConfigurator.swift */; };
+		FEAEED1C34763566FB8AC2B7 /* BookmarksInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9BC8FEA51846CA29BF03E4 /* BookmarksInteractorInput.swift */; };
+		FF2F863427C2544767C02EFE /* SearchConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817B892627DDEA3E9DFC7B44 /* SearchConfiguratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C7A4C440D21E142CF435727 /* SearchViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0DF0CCD5925DE656F17BBECD /* BookmarksRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksRouterInput.swift; sourceTree = "<group>"; };
+		11576E56C3976B848F62ADA5 /* SearchViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchViewTests.swift; sourceTree = "<group>"; };
+		1E0C2E22C3C00E41E3AB38B2 /* SearchInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchInteractorInput.swift; sourceTree = "<group>"; };
+		1FB24B76D319125634B76E7F /* SearchRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchRouterInput.swift; sourceTree = "<group>"; };
+		1FB2CF1BF9462485CA179044 /* ReadInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadInitializer.swift; sourceTree = "<group>"; };
+		20A200B08FACC6E45881CF22 /* BookmarksViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		20A6C7A7DCEBB3F6C7E508CF /* BookmarksViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksViewInput.swift; sourceTree = "<group>"; };
+		220F7CC605011508DF35DF8B /* DailyInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyInteractorOutput.swift; sourceTree = "<group>"; };
+		2363172241AC98BD3A1A9BB4 /* SearchPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
+		23BB6EB4D3009A9542615D93 /* SearchViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchViewOutput.swift; sourceTree = "<group>"; };
+		24539EE82457675D0EB4477D /* DailyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		25BDF8F0431B4D2ADFFF8D03 /* DailyInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyInitializer.swift; sourceTree = "<group>"; };
+		25D2BDA58A852C68C4A9DB5C /* DailyViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyViewOutput.swift; sourceTree = "<group>"; };
+		27D1DD031EE7BC0A8EFC3C62 /* SearchPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		2A0C26D772B3A696D80049E2 /* DailyModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyModuleInput.swift; sourceTree = "<group>"; };
+		2F6B25D3EB89029585B5768A /* DailyPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyPresenter.swift; sourceTree = "<group>"; };
+		3346803F51C93AEA4AFC42D7 /* ReadViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		3B90905210945F54AF2698E3 /* DailyInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyInteractor.swift; sourceTree = "<group>"; };
 		452F4E78C19F99B8978861DD /* Pods_NewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		464E52339F21EC32704A3FDC /* BookmarksPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksPresenterTests.swift; sourceTree = "<group>"; };
+		4745DDED01577968B046638B /* ReadInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadInteractorTests.swift; sourceTree = "<group>"; };
+		4F40DE6CF4F72A7D28C421E7 /* DailyConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyConfiguratorTests.swift; sourceTree = "<group>"; };
+		4FCCE2A853A168E3A765106D /* ReadInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadInteractorOutput.swift; sourceTree = "<group>"; };
+		520D10A81DA0C87A5F28BA32 /* ReadRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadRouter.swift; sourceTree = "<group>"; };
+		544FA98FFB977F36E1C2372C /* DailyViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyViewTests.swift; sourceTree = "<group>"; };
+		5BCB41301A2F344AB95D58E1 /* DailyRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyRouterTests.swift; sourceTree = "<group>"; };
+		5C5C303386D2DB8A832FB2A4 /* BookmarksViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksViewTests.swift; sourceTree = "<group>"; };
+		5E9BC8FEA51846CA29BF03E4 /* BookmarksInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksInteractorInput.swift; sourceTree = "<group>"; };
+		67A27C55A155E7E08E73D072 /* SearchInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchInteractorTests.swift; sourceTree = "<group>"; };
+		6B7828946B1728B6E049AE7F /* DailyConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyConfigurator.swift; sourceTree = "<group>"; };
+		7007E5AEAA81DD9AD4EBCB4B /* DailyViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyViewInput.swift; sourceTree = "<group>"; };
+		75D1D75A72AAF4EB6D4B5C84 /* DailyInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyInteractorTests.swift; sourceTree = "<group>"; };
+		79C4596B7B0727C807C0D0B6 /* ReadConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadConfigurator.swift; sourceTree = "<group>"; };
+		7AFB8A2ADF6F9EF9B9A22A8E /* BookmarksInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksInteractorTests.swift; sourceTree = "<group>"; };
+		7BA173137A924225C1393632 /* BookmarksInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksInteractorOutput.swift; sourceTree = "<group>"; };
+		7E361314889F19EAA7AB63DC /* SearchViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchViewInput.swift; sourceTree = "<group>"; };
+		7ECE01FF4BECD5B208DFFEDB /* SearchRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		7FFB85207527ED45AFF461B2 /* DailyPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyPresenterTests.swift; sourceTree = "<group>"; };
+		817B892627DDEA3E9DFC7B44 /* SearchConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchConfiguratorTests.swift; sourceTree = "<group>"; };
+		81E8255F483FEDF7C84C50EC /* SearchConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchConfigurator.swift; sourceTree = "<group>"; };
+		851E28A4249254C91CD8FB09 /* BookmarksConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksConfigurator.swift; sourceTree = "<group>"; };
+		85DDBE7534C7732A55450B20 /* SearchInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchInteractorOutput.swift; sourceTree = "<group>"; };
 		878F88F80314832082E45B05 /* Pods-NewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.release.xcconfig"; path = "Target Support Files/Pods-NewsApp/Pods-NewsApp.release.xcconfig"; sourceTree = "<group>"; };
+		89E9210F7461B65B127C080D /* BookmarksPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksPresenter.swift; sourceTree = "<group>"; };
+		8D690AC05591BEA91191A37D /* ReadInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadInteractorInput.swift; sourceTree = "<group>"; };
+		998F9A118F33A4D85677C0FC /* ReadModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadModuleInput.swift; sourceTree = "<group>"; };
+		9BD56FA665E31A544E270548 /* ReadRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadRouterTests.swift; sourceTree = "<group>"; };
+		9BDD43EED7C202EE0D6F4AFE /* BookmarksRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksRouter.swift; sourceTree = "<group>"; };
+		A19273753890A6FA6BE4AAA9 /* SearchModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchModuleInput.swift; sourceTree = "<group>"; };
+		A4E2CBDD0704E2824B41F0F4 /* ReadPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadPresenter.swift; sourceTree = "<group>"; };
+		A57386623CF3E14885DC7EEA /* BookmarksConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksConfiguratorTests.swift; sourceTree = "<group>"; };
+		AC25F698C5DAAF3CB9B9A156 /* BookmarksModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksModuleInput.swift; sourceTree = "<group>"; };
 		B077703C78530AB1064345DF /* Pods-NewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.debug.xcconfig"; path = "Target Support Files/Pods-NewsApp/Pods-NewsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B3FC134FBDAF8AEC88FE65E7 /* SearchRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchRouterTests.swift; sourceTree = "<group>"; };
+		B47A03200C211692F9F75E5F /* BookmarksRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksRouterTests.swift; sourceTree = "<group>"; };
+		C2F664BFCBCAA8FA8239EDEB /* SearchInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		C534F573CC27C25B6B5577AF /* DailyInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyInteractorInput.swift; sourceTree = "<group>"; };
+		CB6A66DD04FEA45BECF9235B /* ReadViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadViewOutput.swift; sourceTree = "<group>"; };
 		CED193052557DEE000040A64 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED193082557DEE000040A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED1930A2557DEE000040A64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +162,18 @@
 		CED193202557E27800040A64 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CED193232557E38B00040A64 /* Rambafile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rambafile; sourceTree = "<group>"; };
 		CED193252557E4B600040A64 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D3C17E996DBF955C3FAE21AE /* BookmarksInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksInteractor.swift; sourceTree = "<group>"; };
+		D3C6A33A70D97F8D59D3D703 /* ReadInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadInteractor.swift; sourceTree = "<group>"; };
+		D8A79C244868E511F4F75F35 /* ReadRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadRouterInput.swift; sourceTree = "<group>"; };
+		DCE5FF776EEBC11A99D2D591 /* ReadConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadConfiguratorTests.swift; sourceTree = "<group>"; };
+		E0094E235B0C5E11CDAC1FC7 /* BookmarksViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksViewOutput.swift; sourceTree = "<group>"; };
+		E087B095886A727AA39B8433 /* DailyRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyRouterInput.swift; sourceTree = "<group>"; };
+		E5F59B4752D32457A0ABC768 /* ReadViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadViewTests.swift; sourceTree = "<group>"; };
+		E78C929CC08C7CA069206D66 /* DailyRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DailyRouter.swift; sourceTree = "<group>"; };
+		E9BEE1D34993D6D9DABCEC01 /* ReadPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadPresenterTests.swift; sourceTree = "<group>"; };
+		ED140C14B5C2478353005B71 /* ReadViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadViewInput.swift; sourceTree = "<group>"; };
+		F079384351A495E0C035ECB6 /* BookmarksInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BookmarksInitializer.swift; sourceTree = "<group>"; };
+		F498732D651236F16BCEE03F /* SearchInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchInitializer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +188,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06DD4B6AEA22C3B1CDF5000C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7007E5AEAA81DD9AD4EBCB4B /* DailyViewInput.swift */,
+				25D2BDA58A852C68C4A9DB5C /* DailyViewOutput.swift */,
+				24539EE82457675D0EB4477D /* DailyViewController.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		09B09B1AD7BA757C1C107B07 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DCE5FF776EEBC11A99D2D591 /* ReadConfiguratorTests.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		0A6AE2C6626400D13B95B70E /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A57386623CF3E14885DC7EEA /* BookmarksConfiguratorTests.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1037E484551275E74C97332F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F1D23E8FCD3F20FE28083825 /* Daily */,
+				283ADCCD54F2C3DF6BDD7C4F /* Search */,
+				6E3B6771B396FB5AD24C624D /* Read */,
+				6C8EA642AFB3AEA02EB2F48C /* Bookmarks */,
+			);
+			name = Tests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		206CA2DFF20E19361F8B3B03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED140C14B5C2478353005B71 /* ReadViewInput.swift */,
+				CB6A66DD04FEA45BECF9235B /* ReadViewOutput.swift */,
+				3346803F51C93AEA4AFC42D7 /* ReadViewController.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		283ADCCD54F2C3DF6BDD7C4F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AA6258AAFC35908A7CC7501B /* Configurator */,
+				C746BF753321E86EC0E70007 /* View */,
+				A06F47629260A04F47747428 /* Interactor */,
+				DA43C7ABB4740E5569898C4E /* Presenter */,
+				F569C1A7482E9245D9624B38 /* Router */,
+			);
+			name = Search;
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2F8507EA0A42AA027930AFDF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1FB24B76D319125634B76E7F /* SearchRouterInput.swift */,
+				7ECE01FF4BECD5B208DFFEDB /* SearchRouter.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
 		3F976D730977FCB91D4269CB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +272,324 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		41B122D7CAE4C069A4BE42DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0DF0CCD5925DE656F17BBECD /* BookmarksRouterInput.swift */,
+				9BDD43EED7C202EE0D6F4AFE /* BookmarksRouter.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		47197F6A2118EBF2AC468E70 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				206CA2DFF20E19361F8B3B03 /* View */,
+				504B8FE7AF5B8718C2492E91 /* Presenter */,
+				D8F6769EDFA49626E2DD9EB3 /* Interactor */,
+				D2C957343F862FE1D57E04CA /* Router */,
+				7AC4F6CBEEAF40C988AD3896 /* Configurator */,
+			);
+			name = Read;
+			path = Read;
+			sourceTree = "<group>";
+		};
+		485F2275B76B1E0EBCA2A2D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C5C303386D2DB8A832FB2A4 /* BookmarksViewTests.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		48F82FE199904515E798B83F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7AFB8A2ADF6F9EF9B9A22A8E /* BookmarksInteractorTests.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		501CFD3B28EFBADAC9EF7BF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E361314889F19EAA7AB63DC /* SearchViewInput.swift */,
+				23BB6EB4D3009A9542615D93 /* SearchViewOutput.swift */,
+				0C7A4C440D21E142CF435727 /* SearchViewController.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		504B8FE7AF5B8718C2492E91 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				998F9A118F33A4D85677C0FC /* ReadModuleInput.swift */,
+				A4E2CBDD0704E2824B41F0F4 /* ReadPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5B8D27D5073D7EA9E0020AB6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5E9BC8FEA51846CA29BF03E4 /* BookmarksInteractorInput.swift */,
+				7BA173137A924225C1393632 /* BookmarksInteractorOutput.swift */,
+				D3C17E996DBF955C3FAE21AE /* BookmarksInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6748F3E523FF08835F619371 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2A0C26D772B3A696D80049E2 /* DailyModuleInput.swift */,
+				2F6B25D3EB89029585B5768A /* DailyPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		694BECC5A9A57412D3CBCF5D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B47A03200C211692F9F75E5F /* BookmarksRouterTests.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		696669A397E49248E4A9EF76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5F59B4752D32457A0ABC768 /* ReadViewTests.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C8EA642AFB3AEA02EB2F48C /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				0A6AE2C6626400D13B95B70E /* Configurator */,
+				485F2275B76B1E0EBCA2A2D6 /* View */,
+				48F82FE199904515E798B83F /* Interactor */,
+				D34E5A85D406BDC4B4322046 /* Presenter */,
+				694BECC5A9A57412D3CBCF5D /* Router */,
+			);
+			name = Bookmarks;
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		6E36D784C4535ACAE4A376B1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AEB28DC5DC806E01B08DCFF2 /* Daily */,
+				C4794AC235F365C517B351CE /* Search */,
+				47197F6A2118EBF2AC468E70 /* Read */,
+				98E238D154C28EDBDB358BF2 /* Bookmarks */,
+			);
+			name = Modules;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E3B6771B396FB5AD24C624D /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				09B09B1AD7BA757C1C107B07 /* Configurator */,
+				696669A397E49248E4A9EF76 /* View */,
+				96DFE11F12EFEF7FD808E452 /* Interactor */,
+				971E98286FCBD9E81DD845E0 /* Presenter */,
+				E3844C272FD884841B47A9C6 /* Router */,
+			);
+			name = Read;
+			path = Read;
+			sourceTree = "<group>";
+		};
+		7AC4F6CBEEAF40C988AD3896 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				79C4596B7B0727C807C0D0B6 /* ReadConfigurator.swift */,
+				1FB2CF1BF9462485CA179044 /* ReadInitializer.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		7AD5EB96499C346D30F7C85A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1E0C2E22C3C00E41E3AB38B2 /* SearchInteractorInput.swift */,
+				85DDBE7534C7732A55450B20 /* SearchInteractorOutput.swift */,
+				C2F664BFCBCAA8FA8239EDEB /* SearchInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		81B1859D9C761B6AA20A7093 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AC25F698C5DAAF3CB9B9A156 /* BookmarksModuleInput.swift */,
+				89E9210F7461B65B127C080D /* BookmarksPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		841D67E29C1A1D51655839E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				452F4E78C19F99B8978861DD /* Pods_NewsApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D3FF66808AEA767BE2E9E5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20A6C7A7DCEBB3F6C7E508CF /* BookmarksViewInput.swift */,
+				E0094E235B0C5E11CDAC1FC7 /* BookmarksViewOutput.swift */,
+				20A200B08FACC6E45881CF22 /* BookmarksViewController.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		910F8DB4A14AA1C924C44D3F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				4F40DE6CF4F72A7D28C421E7 /* DailyConfiguratorTests.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		96DFE11F12EFEF7FD808E452 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4745DDED01577968B046638B /* ReadInteractorTests.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		971E98286FCBD9E81DD845E0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E9BEE1D34993D6D9DABCEC01 /* ReadPresenterTests.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		98E238D154C28EDBDB358BF2 /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				8D3FF66808AEA767BE2E9E5E /* View */,
+				81B1859D9C761B6AA20A7093 /* Presenter */,
+				5B8D27D5073D7EA9E0020AB6 /* Interactor */,
+				41B122D7CAE4C069A4BE42DA /* Router */,
+				FB3E3C1167BAEB6483411726 /* Configurator */,
+			);
+			name = Bookmarks;
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		9D846747675E81AFEFFCB749 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				544FA98FFB977F36E1C2372C /* DailyViewTests.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		A06F47629260A04F47747428 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				67A27C55A155E7E08E73D072 /* SearchInteractorTests.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A176D912A46FB16DC071F907 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				75D1D75A72AAF4EB6D4B5C84 /* DailyInteractorTests.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AA6258AAFC35908A7CC7501B /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				817B892627DDEA3E9DFC7B44 /* SearchConfiguratorTests.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		AD0DC5E3597970DD76A1811C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E087B095886A727AA39B8433 /* DailyRouterInput.swift */,
+				E78C929CC08C7CA069206D66 /* DailyRouter.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AEB28DC5DC806E01B08DCFF2 /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				06DD4B6AEA22C3B1CDF5000C /* View */,
+				6748F3E523FF08835F619371 /* Presenter */,
+				D041619C2663895390C6CD61 /* Interactor */,
+				AD0DC5E3597970DD76A1811C /* Router */,
+				E4BDCD12A35FE6A13DB2E8E1 /* Configurator */,
+			);
+			name = Daily;
+			path = Daily;
+			sourceTree = "<group>";
+		};
+		BD5696DA8A89BC623B0097DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A19273753890A6FA6BE4AAA9 /* SearchModuleInput.swift */,
+				27D1DD031EE7BC0A8EFC3C62 /* SearchPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C4794AC235F365C517B351CE /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				501CFD3B28EFBADAC9EF7BF6 /* View */,
+				BD5696DA8A89BC623B0097DA /* Presenter */,
+				7AD5EB96499C346D30F7C85A /* Interactor */,
+				2F8507EA0A42AA027930AFDF /* Router */,
+				F5851778C65206E696A9F179 /* Configurator */,
+			);
+			name = Search;
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C746BF753321E86EC0E70007 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11576E56C3976B848F62ADA5 /* SearchViewTests.swift */,
+			);
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		CED192FC2557DEE000040A64 = {
@@ -102,8 +625,139 @@
 				CED193132557DEE100040A64 /* Assets.xcassets */,
 				CED193152557DEE100040A64 /* LaunchScreen.storyboard */,
 				CED193182557DEE100040A64 /* Info.plist */,
+				6E36D784C4535ACAE4A376B1 /* Modules */,
+				1037E484551275E74C97332F /* Tests */,
 			);
 			path = NewsApp;
+			sourceTree = "<group>";
+		};
+		D041619C2663895390C6CD61 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C534F573CC27C25B6B5577AF /* DailyInteractorInput.swift */,
+				220F7CC605011508DF35DF8B /* DailyInteractorOutput.swift */,
+				3B90905210945F54AF2698E3 /* DailyInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D2C957343F862FE1D57E04CA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D8A79C244868E511F4F75F35 /* ReadRouterInput.swift */,
+				520D10A81DA0C87A5F28BA32 /* ReadRouter.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D34E5A85D406BDC4B4322046 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				464E52339F21EC32704A3FDC /* BookmarksPresenterTests.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D8F6769EDFA49626E2DD9EB3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8D690AC05591BEA91191A37D /* ReadInteractorInput.swift */,
+				4FCCE2A853A168E3A765106D /* ReadInteractorOutput.swift */,
+				D3C6A33A70D97F8D59D3D703 /* ReadInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DA43C7ABB4740E5569898C4E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2363172241AC98BD3A1A9BB4 /* SearchPresenterTests.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E3844C272FD884841B47A9C6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9BD56FA665E31A544E270548 /* ReadRouterTests.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E4BDCD12A35FE6A13DB2E8E1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				6B7828946B1728B6E049AE7F /* DailyConfigurator.swift */,
+				25BDF8F0431B4D2ADFFF8D03 /* DailyInitializer.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		E6828B3CC9B781EBE8E903CD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5BCB41301A2F344AB95D58E1 /* DailyRouterTests.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F1D23E8FCD3F20FE28083825 /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				910F8DB4A14AA1C924C44D3F /* Configurator */,
+				9D846747675E81AFEFFCB749 /* View */,
+				A176D912A46FB16DC071F907 /* Interactor */,
+				FE554FD7338D0B88BB342480 /* Presenter */,
+				E6828B3CC9B781EBE8E903CD /* Router */,
+			);
+			name = Daily;
+			path = Daily;
+			sourceTree = "<group>";
+		};
+		F569C1A7482E9245D9624B38 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B3FC134FBDAF8AEC88FE65E7 /* SearchRouterTests.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F5851778C65206E696A9F179 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				81E8255F483FEDF7C84C50EC /* SearchConfigurator.swift */,
+				F498732D651236F16BCEE03F /* SearchInitializer.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FB3E3C1167BAEB6483411726 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				851E28A4249254C91CD8FB09 /* BookmarksConfigurator.swift */,
+				F079384351A495E0C035ECB6 /* BookmarksInitializer.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FE554FD7338D0B88BB342480 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7FFB85207527ED45AFF461B2 /* DailyPresenterTests.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +902,74 @@
 				CED1930D2557DEE000040A64 /* FirstViewController.swift in Sources */,
 				CED193092557DEE000040A64 /* AppDelegate.swift in Sources */,
 				CED1930B2557DEE000040A64 /* SceneDelegate.swift in Sources */,
+				90439CDF101D5E2AB7C2E6DA /* DailyViewInput.swift in Sources */,
+				432A9DB01796FB17811FD506 /* DailyViewOutput.swift in Sources */,
+				E395DD8FEE3411B7C2C8E985 /* DailyViewController.swift in Sources */,
+				AE0E38D6C09923A94FBF56AD /* DailyModuleInput.swift in Sources */,
+				B48499910682058D13C27783 /* DailyPresenter.swift in Sources */,
+				5EE27DC70AA8CFAB99624467 /* DailyInteractorInput.swift in Sources */,
+				2D81823C84BCD2741D9F8E22 /* DailyInteractorOutput.swift in Sources */,
+				16741191B90201F0C41DF782 /* DailyInteractor.swift in Sources */,
+				B7E35EA1C71C1275CD498CBA /* DailyRouterInput.swift in Sources */,
+				FA3194BFB5CC7A371FAD88E1 /* DailyRouter.swift in Sources */,
+				FD0C905C30DFCDA3F45B72AB /* DailyConfigurator.swift in Sources */,
+				B90749C3116D03CBACFE94A3 /* DailyInitializer.swift in Sources */,
+				645DD343BB72716AE3397005 /* DailyConfiguratorTests.swift in Sources */,
+				393465306FD2A3E49099A9E6 /* DailyViewTests.swift in Sources */,
+				EC64BAE55A9A6EF86C4750B3 /* DailyInteractorTests.swift in Sources */,
+				0F88E3FF072638F9E1A1B226 /* DailyPresenterTests.swift in Sources */,
+				4F09856D7E52EB6D70E6B312 /* DailyRouterTests.swift in Sources */,
+				76D2D6E8E3A7AC2FA68A70D3 /* SearchViewInput.swift in Sources */,
+				F3E0931EC22A4883E1AA7A38 /* SearchViewOutput.swift in Sources */,
+				7B78C59B9D3A34CFA3792C1E /* SearchViewController.swift in Sources */,
+				960D382BB0FEB8ACF191A81A /* SearchModuleInput.swift in Sources */,
+				CFA4BE90DD13CEC18DDCF7A1 /* SearchPresenter.swift in Sources */,
+				C1A69094CFD398C25345220C /* SearchInteractorInput.swift in Sources */,
+				B5F1046955CFE55C2CAC15F0 /* SearchInteractorOutput.swift in Sources */,
+				80CEF497FBC3D209643A78CF /* SearchInteractor.swift in Sources */,
+				59E44B424E03C286CC8658E8 /* SearchRouterInput.swift in Sources */,
+				F5BC00D8BB8DDAF747F00218 /* SearchRouter.swift in Sources */,
+				AB5370139336B77182F9DD7C /* SearchConfigurator.swift in Sources */,
+				C1788EA188F2290E5E001BBB /* SearchInitializer.swift in Sources */,
+				FF2F863427C2544767C02EFE /* SearchConfiguratorTests.swift in Sources */,
+				535DD6CF89A949B42EA9C2BB /* SearchViewTests.swift in Sources */,
+				3EF6543951DD395FC25D1645 /* SearchInteractorTests.swift in Sources */,
+				F523E87875A332298736F2B5 /* SearchPresenterTests.swift in Sources */,
+				4F6650331669FB4D17F7E895 /* SearchRouterTests.swift in Sources */,
+				0B180D18215AC4F0784B344E /* ReadViewInput.swift in Sources */,
+				324B90D462C97A6A81CDD572 /* ReadViewOutput.swift in Sources */,
+				E8334B739DDD3EFABF245C78 /* ReadViewController.swift in Sources */,
+				F696B3B090A930C8C4C0F09F /* ReadModuleInput.swift in Sources */,
+				C81DCCA964F6137F6C7494ED /* ReadPresenter.swift in Sources */,
+				9C4C24D0BBD6D16C863405DE /* ReadInteractorInput.swift in Sources */,
+				E0407B7FB0E1A12B4C86D29D /* ReadInteractorOutput.swift in Sources */,
+				3116BB56E87E599C9FA8B667 /* ReadInteractor.swift in Sources */,
+				68B6262E9A3ADC90BD42FC80 /* ReadRouterInput.swift in Sources */,
+				DD507F2484B9A98E2B602C97 /* ReadRouter.swift in Sources */,
+				47F85D6DEB781EA48B792AD1 /* ReadConfigurator.swift in Sources */,
+				206D0DC14C7A240D24950BD7 /* ReadInitializer.swift in Sources */,
+				7FC3F52325D8D3C2FEE023CA /* ReadConfiguratorTests.swift in Sources */,
+				723F8004AAA8E2954A5B2DEA /* ReadViewTests.swift in Sources */,
+				719211EE441A9D00C4B8C4B3 /* ReadInteractorTests.swift in Sources */,
+				24369DFFC4633E24A1B05871 /* ReadPresenterTests.swift in Sources */,
+				5FC6E28B20878860D4055C2D /* ReadRouterTests.swift in Sources */,
+				860147652DD68B5DD97136FF /* BookmarksViewInput.swift in Sources */,
+				4DEA1B1800F570B5BA6E8F1E /* BookmarksViewOutput.swift in Sources */,
+				E3A4F5477F88974885DB7A2C /* BookmarksViewController.swift in Sources */,
+				1F4A1A4C528614DF902786AA /* BookmarksModuleInput.swift in Sources */,
+				9A3C478B74A0D638916AB99C /* BookmarksPresenter.swift in Sources */,
+				FEAEED1C34763566FB8AC2B7 /* BookmarksInteractorInput.swift in Sources */,
+				7AB408C521E2FBB000725BD7 /* BookmarksInteractorOutput.swift in Sources */,
+				5360B14DCD66DF13DFD7AD98 /* BookmarksInteractor.swift in Sources */,
+				9FA501D71924EFDEF6499FE0 /* BookmarksRouterInput.swift in Sources */,
+				1A4711823E433855843F373A /* BookmarksRouter.swift in Sources */,
+				34CE76B410B06D8E713BA17C /* BookmarksConfigurator.swift in Sources */,
+				29451564248B19930F2A8F46 /* BookmarksInitializer.swift in Sources */,
+				8E1203647323B3C0F1081F27 /* BookmarksConfiguratorTests.swift in Sources */,
+				771FA0F4B7FEB396ECD8F271 /* BookmarksViewTests.swift in Sources */,
+				342159A9A35A26E6FCA7BAB6 /* BookmarksInteractorTests.swift in Sources */,
+				EB185C8B03340EA9FB362B37 /* BookmarksPresenterTests.swift in Sources */,
+				A31FC2955C5409163F5F66C4 /* BookmarksRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
