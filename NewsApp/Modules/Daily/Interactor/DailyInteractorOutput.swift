@@ -10,4 +10,7 @@ import Foundation
 
 protocol DailyInteractorOutput: class {
 
+    func topStoriesDataChanged(_ articles:[News])
+    func latestNewsDataChanged(_ articles:[News])
+
 }
