@@ -10,4 +10,5 @@ import Foundation
 
 protocol DailyRouterInput {
 
+    func sectionButtonTapped(withType type:SectionType)
 }

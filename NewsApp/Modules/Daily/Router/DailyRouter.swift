@@ -7,5 +7,7 @@
 //
 
 class DailyRouter: DailyRouterInput {
-
+    func sectionButtonTapped(withType type: SectionType) {
+        
+    }
 }

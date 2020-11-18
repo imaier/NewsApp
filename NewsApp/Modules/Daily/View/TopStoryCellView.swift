@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol NewsCellDetails {
+protocol NewsCellDetails: class {
     var bookmarkState: Bool {get set}
     var title: String {get set}
     var headImage: UIImage? {get set}

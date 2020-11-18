@@ -59,6 +59,8 @@ class DailyPresenter: DailyModuleInput, DailyViewOutput, DailyInteractorOutput {
     }
 
     func sectionButtonTapped(withType type:SectionType) {
+        router.sectionButtonTapped(withType:type)
+        view.performSegue(to: type)
     }
     func onDetailsTapped(withNews model: News) {
     }

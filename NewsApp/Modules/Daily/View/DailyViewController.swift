@@ -22,8 +22,20 @@ class DailyViewController: UIViewController, DailyViewInput {
         output.viewIsReady()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SectionDetails" {
+            if let newsListVC = segue.destination as? NewsListViewController, let type = sender as? SectionType {
+                newsListVC.output.setListType(type)
+            }
+        }
+    }
+
     // MARK: DailyViewInput
     func setupInitialState() {
+    }
+    
+    func performSegue(to type: SectionType) {
+        performSegue(withIdentifier: "SectionDetails", sender: type)
     }
 
     func setViewModel(forSections sections:[NewsSectionViewModel]) {
@@ -38,7 +50,7 @@ extension DailyViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier:
                                                     self.sectionsViewModel[indexPath.section].cellIdentifiller,
                                                  for: indexPath)
-        if var newsCell = cell as? NewsCellDetails {
+        if let newsCell = cell as? NewsCellDetails {
             let model = sectionsViewModel[indexPath.section].articles[indexPath.row]
             newsCell.bookmarkState = model.inBoookmarks
             newsCell.title = model.title
@@ -61,6 +73,8 @@ extension DailyViewController: UITableViewDataSource, UITableViewDelegate {
                 sourceAndTime += relativeTime
             }
             newsCell.sourceTitle = sourceAndTime
+            //cell.layer.borderWidth = 1
+            //cell.layer.borderColor = UIColor.red.cgColor
             self.output.getUrl(model.urlToImage) { (_, data) in
                 if newsCell.title == model.title {
                     guard let data = data else {

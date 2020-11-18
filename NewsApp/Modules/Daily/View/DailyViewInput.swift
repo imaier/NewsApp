@@ -15,4 +15,5 @@ protocol DailyViewInput: class {
 
     func setupInitialState()
     func setViewModel(forSections sections:[NewsSectionViewModel])
+    func performSegue(to type:SectionType)
 }
