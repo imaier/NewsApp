@@ -16,8 +16,6 @@ protocol NewsListViewOutput {
 
     func viewIsReady()
     func setListType(_ type:SectionType)
-    func getCount() -> Int
-    func getViewModel(for row:Int) -> NewsCellViewModel
     func getUrl(_ url:String, complition:@escaping (_ url: String, _ data: Data?) -> Void)
     func onDetailsTapped(withNews model:News)
     func onBookmarkTapped(withNews model:News)

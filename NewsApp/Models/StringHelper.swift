@@ -23,7 +23,8 @@ import Foundation
     str.index(of: "play")      // 7
     str.endIndex(of: "play")   // 11
     str.indices(of: "play")    // [7, 19, 31]
-    str.ranges(of: "play")     // [{lowerBound 7, upperBound 11}, {lowerBound 19, upperBound 23}, {lowerBound 31, upperBound 35}]
+    str.ranges(of: "play")     // [{lowerBound 7, upperBound 11},
+                               //{lowerBound 19, upperBound 23}, {lowerBound 31, upperBound 35}]
  
     case insensitive sample
 

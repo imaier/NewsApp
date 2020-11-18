@@ -14,6 +14,5 @@ protocol NewsListViewInput: class {
     */
 
     func setupInitialState()
-    func setNavigationTitle(_ navBarTitle:String)
-    func update()
+    func update(with model:NewsListViewModel)
 }

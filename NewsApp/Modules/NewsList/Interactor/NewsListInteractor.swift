@@ -19,7 +19,7 @@ class NewsListInteractor: NewsListInteractorInput {
             page = newsContainer.articles.count / newsContainer.filter.pageSize + 1
         }
         var loadFunc = NewsLoaderSevice.shared.loadTopStories
-        if type == .topStories {
+        if type == .latestNews {
             loadFunc = NewsLoaderSevice.shared.loadNews
         }
         loadFunc(newsContainer.filter, page) { (error, results) in

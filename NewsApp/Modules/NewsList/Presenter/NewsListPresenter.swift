@@ -9,14 +9,12 @@ import Foundation
 
 class NewsListPresenter: NewsListModuleInput, NewsListViewOutput, NewsListInteractorOutput {
 
-    
-
     weak var view: NewsListViewInput!
     var interactor: NewsListInteractorInput!
     var router: NewsListRouterInput!
 
-    private var sectionType: SectionType?
-    private var articles: [News] = []
+    private var sectionType: SectionType = .latestNews
+    private var model = NewsListViewModel(navigationTitle: "", articles: [])
 
     func viewIsReady() {
 
@@ -24,26 +22,19 @@ class NewsListPresenter: NewsListModuleInput, NewsListViewOutput, NewsListIntera
 
     func setListType(_ type: SectionType) {
         sectionType = type
-        interactor.getData(for: type)
-        switch type {
+        interactor.getData(for: sectionType)
+        switch sectionType {
         case .latestNews:
-            view.setNavigationTitle("Latest News")
+            model.navigationTitle = "Latest News"
         case .topStories:
-            view.setNavigationTitle("Top Stories")
+            model.navigationTitle = "Top Stories"
         }
+        view.update(with:model)
     }
 
     func dataChanged(_ articles: [News]) {
-        self.articles = articles
-        self.view.update()
-    }
-
-    func getCount() -> Int {
-        return self.articles.count
-    }
-
-    func getViewModel(for row: Int) -> NewsCellViewModel {
-        return NewsCellViewModel(model: self.articles[row])
+        self.model.articles = articles
+        self.view.update(with: self.model)
     }
 
     func getUrl(_ url:String, complition:@escaping (_ url: String, _ data: Data?) -> Void) {

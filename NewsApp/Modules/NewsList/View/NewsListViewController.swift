@@ -11,9 +11,10 @@ import UIKit
 class NewsListViewController: UIViewController, NewsListViewInput {
 
     var output: NewsListViewOutput!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView?
 
     private let cellIdentifier = "newsListCellIdentifier"
+    var viewModel = NewsListViewModel(navigationTitle: "", articles: [])
 
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -21,46 +22,42 @@ class NewsListViewController: UIViewController, NewsListViewInput {
         output.viewIsReady()
 
         let cellNib = UINib(nibName: "NewsListViewCell", bundle: Bundle.main)
-        tableView.register(cellNib, forCellReuseIdentifier: cellIdentifier)
+        tableView?.register(cellNib, forCellReuseIdentifier: cellIdentifier)
     }
 
    // MARK: NewsListViewInput
     func setupInitialState() {
     }
-    func setNavigationTitle(_ navBarTitle: String) {
-        if let navVc = navigationController {
-            navVc.title = navBarTitle
-        }
-        //navigationController?.title = navBarTitle
-    }
 
-    func update() {
-        tableView.reloadData()
+    func update(with model: NewsListViewModel) {
+        self.viewModel = model
+        navigationItem.title = self.viewModel.navigationTitle
+        tableView?.reloadData()
     }
 }
 
 extension NewsListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.output.getCount()
+        return self.viewModel.articles.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
         if let newsCell = cell as? NewsListCellDetails {
-            let viewModel = self.output.getViewModel(for: indexPath.row)
-            newsCell.fillStrings(with: viewModel.model)
+            let model = self.viewModel.articles[indexPath.row]
+            newsCell.fillStrings(with: model)
             newsCell.onMoreTapped = { [weak self] in
-                self?.output.onDetailsTapped(withNews: viewModel.model)
+                self?.output.onDetailsTapped(withNews: model)
             }
             newsCell.onBookmarkTapped = { [weak self] in
-                self?.output.onBookmarkTapped(withNews: viewModel.model)
+                self?.output.onBookmarkTapped(withNews: model)
             }
             //cell.layer.borderWidth = 1
             //cell.layer.borderColor = UIColor.red.cgColor
             newsCell.headImage = nil
-            self.output.getUrl(viewModel.model.urlToImage) { (_, data) in
-                if newsCell.title == viewModel.model.title {
+            self.output.getUrl(model.urlToImage) { (_, data) in
+                if newsCell.title == model.title {
                     guard let data = data else {
                         newsCell.headImage = UIImage(named: "latestnews")
                         return
