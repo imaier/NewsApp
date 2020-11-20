@@ -389,29 +389,29 @@ cuts on hold</string>
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fib-vf-nfK">
-                                        <rect key="frame" x="0.0" y="37" width="414" height="678"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="686"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BBC" translatesAutoresizingMaskIntoConstraints="NO" id="Boq-2J-Wvi">
-                                                <rect key="frame" x="187" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="187" y="8" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="196-m9-OYI"/>
                                                     <constraint firstAttribute="width" constant="40" id="hfr-aG-Qrs"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="BBC News" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ba-Au-Fcp">
-                                                <rect key="frame" x="235" y="13" width="163" height="14.5"/>
+                                                <rect key="frame" x="235" y="21" width="163" height="14.5"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
                                                 <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trump 'can't imagine why' US disinfectant calls spiked" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzU-Oa-MXJ">
-                                                <rect key="frame" x="16" y="48" width="382" height="55"/>
+                                                <rect key="frame" x="16" y="56" width="382" height="55"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="23"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeJ-zt-O2U">
-                                                <rect key="frame" x="107" y="119" width="200" height="1"/>
+                                                <rect key="frame" x="107" y="127" width="200" height="1"/>
                                                 <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="3Jk-rr-AmW"/>
@@ -419,13 +419,13 @@ cuts on hold</string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Published" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9j-nd-DDl">
-                                                <rect key="frame" x="182" y="132" width="50" height="15"/>
+                                                <rect key="frame" x="182" y="140" width="50" height="15"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="28 April, 2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qJ-g1-1ly">
-                                                <rect key="frame" x="171" y="147" width="72.5" height="15"/>
+                                                <rect key="frame" x="171" y="155" width="72.5" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="BUo-yy-iS2"/>
                                                 </constraints>
@@ -434,13 +434,13 @@ cuts on hold</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latestnews" translatesAutoresizingMaskIntoConstraints="NO" id="YnY-Lv-AKk">
-                                                <rect key="frame" x="0.0" y="178" width="414" height="80"/>
+                                                <rect key="frame" x="0.0" y="186" width="414" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="CTp-7l-Idh"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="via-9I-LSa">
-                                                <rect key="frame" x="16" y="274" width="382" height="388"/>
+                                                <rect key="frame" x="16" y="282" width="382" height="388"/>
                                                 <string key="text">President Donald Trump has said he "can't imagine why" US hotline calls about disinfectant have risen after he suggested injecting the substance to treat coronavirus.
 
 The governors of Michigan and Maryland 
@@ -485,7 +485,7 @@ When asked whether he took responsibility at all for the increase in calls, Mr T
                                             <constraint firstItem="YnY-Lv-AKk" firstAttribute="leading" secondItem="Fib-vf-nfK" secondAttribute="leading" id="oZK-hg-4qc"/>
                                             <constraint firstAttribute="trailing" secondItem="YnY-Lv-AKk" secondAttribute="trailing" id="qFo-rW-WAs"/>
                                             <constraint firstAttribute="bottom" secondItem="via-9I-LSa" secondAttribute="bottom" priority="249" constant="16" id="vxR-Gt-Gdz"/>
-                                            <constraint firstItem="Boq-2J-Wvi" firstAttribute="top" secondItem="Fib-vf-nfK" secondAttribute="top" id="xfR-dU-B6k"/>
+                                            <constraint firstItem="Boq-2J-Wvi" firstAttribute="top" secondItem="Fib-vf-nfK" secondAttribute="top" constant="8" id="xfR-dU-B6k"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -493,7 +493,7 @@ When asked whether he took responsibility at all for the increase in calls, Mr T
                                     <constraint firstItem="Fib-vf-nfK" firstAttribute="centerX" secondItem="Gfe-Od-qfS" secondAttribute="centerX" id="5lZ-5m-Rwx"/>
                                     <constraint firstItem="rmx-2n-fmi" firstAttribute="bottom" secondItem="Fib-vf-nfK" secondAttribute="bottom" id="DLT-YJ-d69"/>
                                     <constraint firstItem="Fib-vf-nfK" firstAttribute="leading" secondItem="Gfe-Od-qfS" secondAttribute="leading" id="SVy-e5-wZn"/>
-                                    <constraint firstItem="Fib-vf-nfK" firstAttribute="top" secondItem="rmx-2n-fmi" secondAttribute="top" constant="37" id="YqA-Qr-lGa"/>
+                                    <constraint firstItem="Fib-vf-nfK" firstAttribute="top" secondItem="rmx-2n-fmi" secondAttribute="top" id="YqA-Qr-lGa"/>
                                     <constraint firstAttribute="bottom" secondItem="Fib-vf-nfK" secondAttribute="bottom" id="yqA-yb-d5y"/>
                                     <constraint firstAttribute="trailing" secondItem="Fib-vf-nfK" secondAttribute="trailing" id="zHH-aG-ETr"/>
                                 </constraints>

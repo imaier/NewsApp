@@ -46,6 +46,8 @@ class ReadViewController: UIViewController, ReadViewInput {
         sRFC3339DateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
         if let date = sRFC3339DateFormatter.date(from: model.publishedAt) {
             let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .none
             formatter.locale =  Locale(identifier: "en_US")
             let result  = formatter.string(from: date)
             publishDate.text = result
