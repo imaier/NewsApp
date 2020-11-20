@@ -16,7 +16,7 @@ class NewsLoaderSevice: NSObject {
     func loadNews(with filter:FilterData, page pageNum: Int = 0,
                   completion:@escaping (_ error:Error?, _ result:([News], Int)?) -> Void) {
         var params = paramsForFilter(filter)
-        
+
         params["country"] = FilterData.countries()[filter.country]
         if filter.category != noFilterIndex {
             params["category"] = FilterData.categories()[filter.category]
@@ -25,46 +25,10 @@ class NewsLoaderSevice: NSObject {
         if pageNum > 0 {
            params["page"] = String(pageNum)
         }
-        
-        AF.request("https://newsapi.org/v2/top-headlines", parameters: params)
-          .validate()
-          .response { response in
-            //let val = response.value
-            
-            switch response.result {
-            case .success(let value):
-                guard let data = value else {
-                    completion(nil, nil)
-                    return
-                }
-                let json = JSON(data)
-                let articles = json["articles"]
-                let totalResults = json["totalResults"].intValue
-                if articles.type == .array {
-                    let newsArray = articles.arrayValue.map { (jsonNews) -> News in
-                        return News(urlToImage: jsonNews["urlToImage"].stringValue,
-                                    title: jsonNews["title"].stringValue,
-                                    url: jsonNews["url"].stringValue,
-                                    description: jsonNews["description"].stringValue,
-                                    author: jsonNews["author"].stringValue,
-                                    publishedAt: jsonNews["publishedAt"].stringValue,
-                                    content: jsonNews["content"].stringValue)
-                    }
 
-                    DispatchQueue.main.async {
-                        completion(nil, (newsArray, totalResults))
-                    }
-                }
-                print("JSON: \(json)")
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    completion(error, nil)
-                }
-                print(error)
-            }
-        }
+        self.loadAndParse(request: "https://newsapi.org/v2/top-headlines", parameters: params, completion: completion)
     }
-    
+
     func loadTopStories(with filter:FilterData, page pageNum: Int = 0,
                         completion:@escaping (_ error:Error?, _ result:([News], Int)?) -> Void) {
         var params = paramsForFilter(filter)
@@ -87,7 +51,13 @@ class NewsLoaderSevice: NSObject {
          Please set any of the following required parameters and try again: q, qInTitle, sources, domains
         */
 
-        AF.request("https://newsapi.org/v2/everything", parameters: params)
+        self.loadAndParse(request: "https://newsapi.org/v2/everything", parameters: params, completion: completion)
+    }
+
+    private func loadAndParse<Parameters: Encodable>(request url:String,
+                                                     parameters params: Parameters?,
+                                                     completion:@escaping (_ error:Error?, _ result:([News], Int)?) -> Void) {
+        AF.request(url, parameters: params)
           //.validate(statusCode: 200..<500)
           //.validate(contentType: ["application/json"])
           .validate()
