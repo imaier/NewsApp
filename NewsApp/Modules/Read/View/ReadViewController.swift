@@ -19,13 +19,15 @@ class ReadViewController: UIViewController, ReadViewInput {
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var bookmarkBarButton: UIBarButtonItem!
-
     @IBOutlet weak var newsImageHeight: NSLayoutConstraint!
-    
-    @IBAction func bookmark(_ sender: Any) {
-        //onBookmarkTapped()
-    }
 
+    @IBAction func bookmark(_ sender: Any) {
+        output.onBookmarkTapped()
+    }
+    @IBAction func share(_ sender: Any) {
+        output.onShareTapped()
+    }
+    
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +42,7 @@ class ReadViewController: UIViewController, ReadViewInput {
         sourceTitleLabel.text = model.newsSource.name
         newsTitle.text = model.title
         publishDate.text = model.publishedAt
-        
+
         let sRFC3339DateFormatter = DateFormatter()
         sRFC3339DateFormatter.locale = Locale(identifier: "en_US_POSIX")
         sRFC3339DateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"

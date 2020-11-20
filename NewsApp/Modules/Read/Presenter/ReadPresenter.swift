@@ -9,6 +9,8 @@ import Foundation
 
 class ReadPresenter: ReadModuleInput, ReadViewOutput, ReadInteractorOutput {
 
+    
+
     weak var view: ReadViewInput!
     var interactor: ReadInteractorInput!
     var router: ReadRouterInput!
@@ -27,5 +29,15 @@ class ReadPresenter: ReadModuleInput, ReadViewOutput, ReadInteractorOutput {
 
     func getUrl(_ url:String, complition:@escaping (_ url: String, _ data: Data?) -> Void) {
         interactor.getUrl(url, complition: complition)
+    }
+
+    func onBookmarkTapped() {
+    }
+
+    func onShareTapped() {
+        guard let model = inputModel else {
+            return
+        }
+        router.share(with:model)
     }
 }

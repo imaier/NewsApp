@@ -20,7 +20,8 @@ class ReadModuleConfigurator {
     private func configure(viewController: ReadViewController) {
 
         let router = ReadRouter()
-
+        router.transitionHandler = viewController
+        
         let presenter = ReadPresenter()
         presenter.view = viewController
         presenter.router = router

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ReadRouterInput {
-
+    func share(with model:News)
 }
