@@ -10,8 +10,8 @@ import UIKit
 
 class NewsListViewController: UIViewController, NewsListViewInput {
 
-    var output: NewsListViewOutput!
-    @IBOutlet weak var tableView: UITableView?
+    var output: (NewsListViewOutput & NewsListModuleInput)!
+    @IBOutlet weak var tableView: UITableView!
 
     private let cellIdentifier = "newsListCellIdentifier"
     var viewModel = NewsListViewModel(navigationTitle: "", articles: [])
@@ -30,9 +30,10 @@ class NewsListViewController: UIViewController, NewsListViewInput {
     }
 
     func update(with model: NewsListViewModel) {
-        self.viewModel = model
-        navigationItem.title = self.viewModel.navigationTitle
-        tableView?.reloadData()
+        loadViewIfNeeded()
+        viewModel = model
+        navigationItem.title = viewModel.navigationTitle
+        tableView.reloadData()
     }
 }
 

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol NewsListRouterInput {
-
+    func detailsButtonTapped(withNews model: News)
 }

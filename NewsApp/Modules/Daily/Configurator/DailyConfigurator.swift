@@ -20,6 +20,7 @@ class DailyModuleConfigurator {
     private func configure(viewController: DailyViewController) {
 
         let router = DailyRouter()
+        router.transitionHandler = viewController
 
         let presenter = DailyPresenter()
         presenter.view = viewController

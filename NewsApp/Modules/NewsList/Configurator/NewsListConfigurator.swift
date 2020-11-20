@@ -20,6 +20,7 @@ class NewsListModuleConfigurator {
     private func configure(viewController: NewsListViewController) {
 
         let router = NewsListRouter()
+        router.transitionHandler = viewController
 
         let presenter = NewsListPresenter()
         presenter.view = viewController

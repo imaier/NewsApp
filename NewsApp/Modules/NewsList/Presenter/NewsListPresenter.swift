@@ -7,7 +7,7 @@
 //
 import Foundation
 
-class NewsListPresenter: NewsListModuleInput, NewsListViewOutput, NewsListInteractorOutput {
+class NewsListPresenter: NSObject, NewsListModuleInput, NewsListViewOutput, NewsListInteractorOutput {
 
     weak var view: NewsListViewInput!
     var interactor: NewsListInteractorInput!
@@ -20,7 +20,8 @@ class NewsListPresenter: NewsListModuleInput, NewsListViewOutput, NewsListIntera
 
     }
 
-    func setListType(_ type: SectionType) {
+    // NewsListModuleInput
+    func moduleConfiguration(with type: SectionType) {
         sectionType = type
         interactor.getData(for: sectionType)
         switch sectionType {
@@ -42,6 +43,7 @@ class NewsListPresenter: NewsListModuleInput, NewsListViewOutput, NewsListIntera
     }
 
     func onDetailsTapped(withNews model: News) {
+        router.detailsButtonTapped(withNews: model)
     }
 
     func onBookmarkTapped(withNews model: News) {

@@ -7,5 +7,5 @@
 //
 
 protocol NewsListModuleInput: class {
-
+    func moduleConfiguration(with type: SectionType)
 }

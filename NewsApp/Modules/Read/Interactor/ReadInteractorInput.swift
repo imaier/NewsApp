@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ReadInteractorInput {
-
+    func getUrl(_ url:String, complition:@escaping (_ url: String, _ data: Data?) -> Void)
 }

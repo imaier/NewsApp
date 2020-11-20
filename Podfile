@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '13.0'
+platform :ios, '13.0'
 
 target 'NewsApp' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -9,4 +9,7 @@ target 'NewsApp' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SwiftLint'
+  #pod "ViperMcFlurry"
+  #pod "ViperMcFlurrySwiftFix"
+  pod "LiteRoute"
 end

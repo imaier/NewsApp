@@ -21,19 +21,19 @@ class DailyViewController: UIViewController, DailyViewInput {
         super.viewDidLoad()
         output.viewIsReady()
     }
-
+/*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SectionDetails" {
             if let newsListVC = segue.destination as? NewsListViewController, let type = sender as? SectionType {
-                newsListVC.output.setListType(type)
+                newsListVC.output.moduleConfiguration(with: type)
             }
         }
     }
-
+*/
     // MARK: DailyViewInput
     func setupInitialState() {
     }
-    
+
     func performSegue(to type: SectionType) {
         performSegue(withIdentifier: "SectionDetails", sender: type)
     }

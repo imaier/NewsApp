@@ -14,11 +14,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsListCellIdentifier" rowHeight="213" id="KGk-i7-Jjw" customClass="NewsListViewCell" customModule="NewsApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="403" height="213"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsListCellIdentifier" rowHeight="155" id="KGk-i7-Jjw" customClass="NewsListViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="155"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="403" height="213"/>
+                <rect key="frame" x="0.0" y="0.0" width="393" height="155"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="BBC News" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezn-BZ-UIJ">
@@ -28,23 +28,19 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="1 hour ago" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVb-dU-a9B">
-                        <rect key="frame" x="16" y="189" width="52.5" height="14.5"/>
+                        <rect key="frame" x="16" y="122.5" width="52.5" height="14.5"/>
                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
                         <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH3-xW-clC">
-                        <rect key="frame" x="16" y="38.5" width="264" height="142.5"/>
-                        <constraints>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76" id="2G8-Ch-jYL"/>
-                        </constraints>
-                        <string key="text">Analysts Aren’t Buying the Sterling Rebound Analysts Aren’t Buying the Sterling ReboundAnalysts Aren’t Buying the Sterling ReboundAnalysts Aren’t Buying the Sterling ReboundAnalysts Aren’t Buying the Sterling Rebound</string>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analysts Aren’t Buying the Sterling Rebound " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH3-xW-clC">
+                        <rect key="frame" x="16" y="42.5" width="254" height="41"/>
                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latestnews" translatesAutoresizingMaskIntoConstraints="NO" id="mu1-zq-pDp">
-                        <rect key="frame" x="307" y="8" width="80" height="80"/>
+                        <rect key="frame" x="297" y="8" width="80" height="80"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="80" id="Nob-Sg-sbC"/>
                             <constraint firstAttribute="width" constant="80" id="wTY-5T-cYg"/>
@@ -54,7 +50,7 @@
                         <rect key="frame" x="16" y="6" width="26.5" height="26.5"/>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnH-V5-KDJ">
-                        <rect key="frame" x="319" y="96" width="28" height="28"/>
+                        <rect key="frame" x="309" y="96" width="28" height="28"/>
                         <inset key="contentEdgeInsets" minX="5" minY="2" maxX="5" maxY="2"/>
                         <state key="normal" image="bookmark"/>
                         <state key="selected" image="bookmarkSelected"/>
@@ -63,7 +59,7 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRA-RE-ypV">
-                        <rect key="frame" x="359" y="96" width="28" height="28"/>
+                        <rect key="frame" x="349" y="96" width="28" height="28"/>
                         <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
                         <state key="normal" image="more"/>
                         <connections>
@@ -72,7 +68,7 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="tVb-dU-a9B" secondAttribute="bottom" priority="250" constant="12" id="0Hm-yK-duz"/>
+                    <constraint firstAttribute="bottom" secondItem="tVb-dU-a9B" secondAttribute="bottom" priority="249" constant="12" id="0Hm-yK-duz"/>
                     <constraint firstItem="MnH-V5-KDJ" firstAttribute="centerY" secondItem="xRA-RE-ypV" secondAttribute="centerY" id="1QP-iC-b2p"/>
                     <constraint firstItem="Ezn-BZ-UIJ" firstAttribute="leading" secondItem="Ahh-7G-2c7" secondAttribute="trailing" constant="12" id="402-75-QFZ"/>
                     <constraint firstItem="xRA-RE-ypV" firstAttribute="top" secondItem="mu1-zq-pDp" secondAttribute="bottom" constant="8" id="4ew-xO-j0K"/>
@@ -80,14 +76,15 @@
                     <constraint firstItem="Ahh-7G-2c7" firstAttribute="centerY" secondItem="Ezn-BZ-UIJ" secondAttribute="centerY" id="BnE-Rn-sc9"/>
                     <constraint firstAttribute="trailing" secondItem="mu1-zq-pDp" secondAttribute="trailing" constant="16" id="DL3-vO-R24"/>
                     <constraint firstItem="xRA-RE-ypV" firstAttribute="trailing" secondItem="mu1-zq-pDp" secondAttribute="trailing" id="GiB-Qs-KWe"/>
-                    <constraint firstItem="tVb-dU-a9B" firstAttribute="top" secondItem="RH3-xW-clC" secondAttribute="bottom" constant="8" id="Suc-nr-bLW"/>
+                    <constraint firstItem="tVb-dU-a9B" firstAttribute="top" secondItem="RH3-xW-clC" secondAttribute="bottom" priority="250" constant="8" id="Suc-nr-bLW"/>
                     <constraint firstItem="Ahh-7G-2c7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="T45-vW-gSM"/>
                     <constraint firstItem="Ezn-BZ-UIJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="X9G-mu-fY4"/>
                     <constraint firstItem="Ahh-7G-2c7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="YTG-H6-9LV"/>
-                    <constraint firstItem="RH3-xW-clC" firstAttribute="top" secondItem="Ezn-BZ-UIJ" secondAttribute="bottom" constant="12" id="ZEW-a9-cmK"/>
+                    <constraint firstItem="RH3-xW-clC" firstAttribute="top" secondItem="Ezn-BZ-UIJ" secondAttribute="bottom" constant="16" id="ZEW-a9-cmK"/>
                     <constraint firstItem="mu1-zq-pDp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="b0k-g0-7C1"/>
                     <constraint firstItem="RH3-xW-clC" firstAttribute="leading" secondItem="Ahh-7G-2c7" secondAttribute="leading" id="eCC-lb-uWV"/>
                     <constraint firstItem="xRA-RE-ypV" firstAttribute="leading" secondItem="MnH-V5-KDJ" secondAttribute="trailing" constant="12" id="fjT-b6-kom"/>
+                    <constraint firstItem="tVb-dU-a9B" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ahh-7G-2c7" secondAttribute="bottom" constant="90" id="ggf-yV-Wmd"/>
                     <constraint firstItem="mu1-zq-pDp" firstAttribute="leading" secondItem="RH3-xW-clC" secondAttribute="trailing" constant="27" id="yid-Df-yay"/>
                 </constraints>
             </tableViewCellContentView>
@@ -101,7 +98,7 @@
                 <outlet property="sourceImageView" destination="Ahh-7G-2c7" id="SIu-vi-3fx"/>
                 <outlet property="sourceTitleLabel" destination="Ezn-BZ-UIJ" id="QjB-gq-2NJ"/>
             </connections>
-            <point key="canvasLocation" x="200.72463768115944" y="134.26339285714286"/>
+            <point key="canvasLocation" x="193.47826086956522" y="114.84375"/>
         </tableViewCell>
     </objects>
     <resources>

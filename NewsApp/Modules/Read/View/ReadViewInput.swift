@@ -14,4 +14,5 @@ protocol ReadViewInput: class {
     */
 
     func setupInitialState()
+    func update(with model:News)
 }

@@ -7,5 +7,5 @@
 //
 
 protocol ReadModuleInput: class {
-
+    func moduleConfiguration(with model:News)
 }

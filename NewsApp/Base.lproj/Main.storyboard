@@ -78,7 +78,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="0O5-T6-pFH">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
@@ -324,6 +324,7 @@ cuts on hold</string>
                     <connections>
                         <outlet property="tableView" destination="rD7-2D-uEf" id="ySA-WQ-yaM"/>
                         <segue destination="fIG-Gu-JFQ" kind="show" identifier="SectionDetails" id="ctB-W9-LzF"/>
+                        <segue destination="kiD-4k-BQI" kind="show" identifier="ReadDetails" id="xaK-sG-kf5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6Q-MW-sxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -361,9 +362,10 @@ cuts on hold</string>
                             <constraint firstItem="hvc-in-cq3" firstAttribute="bottom" secondItem="0F6-aW-Q2q" secondAttribute="bottom" id="wDQ-cT-s8C"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3lG-nZ-a6G"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="3lG-nZ-a6G"/>
                     <connections>
                         <outlet property="tableView" destination="hvc-in-cq3" id="pcE-0P-WHw"/>
+                        <segue destination="kiD-4k-BQI" kind="show" identifier="ReadDetails" id="ahH-lQ-sBE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPp-nB-M97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -374,6 +376,167 @@ cuts on hold</string>
                 </customObject>
             </objects>
             <point key="canvasLocation" x="2489.8550724637685" y="-324.10714285714283"/>
+        </scene>
+        <!--Read View Controller-->
+        <scene sceneID="J8G-FM-OWR">
+            <objects>
+                <viewController id="kiD-4k-BQI" customClass="ReadViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o2Y-j5-iwq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfe-Od-qfS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fib-vf-nfK">
+                                        <rect key="frame" x="0.0" y="37" width="414" height="678"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BBC" translatesAutoresizingMaskIntoConstraints="NO" id="Boq-2J-Wvi">
+                                                <rect key="frame" x="187" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="196-m9-OYI"/>
+                                                    <constraint firstAttribute="width" constant="40" id="hfr-aG-Qrs"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="BBC News" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ba-Au-Fcp">
+                                                <rect key="frame" x="235" y="13" width="163" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trump 'can't imagine why' US disinfectant calls spiked" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzU-Oa-MXJ">
+                                                <rect key="frame" x="16" y="48" width="382" height="55"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeJ-zt-O2U">
+                                                <rect key="frame" x="107" y="119" width="200" height="1"/>
+                                                <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="3Jk-rr-AmW"/>
+                                                    <constraint firstAttribute="height" constant="1" id="BpQ-ab-Nu1"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Published" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9j-nd-DDl">
+                                                <rect key="frame" x="182" y="132" width="50" height="15"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="28 April, 2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qJ-g1-1ly">
+                                                <rect key="frame" x="171" y="147" width="72.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="BUo-yy-iS2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                                <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latestnews" translatesAutoresizingMaskIntoConstraints="NO" id="YnY-Lv-AKk">
+                                                <rect key="frame" x="0.0" y="178" width="414" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="CTp-7l-Idh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="via-9I-LSa">
+                                                <rect key="frame" x="16" y="274" width="382" height="388"/>
+                                                <string key="text">President Donald Trump has said he "can't imagine why" US hotline calls about disinfectant have risen after he suggested injecting the substance to treat coronavirus.
+
+The governors of Michigan and Maryland 
+on Sunday blamed the president for the spike 
+in such calls.
+
+Following heavy criticism from medical professionals, Mr Trump said his remarks were made sarcastically.
+
+Disinfectants are hazardous substances and can be poisonous if ingested.
+
+During Monday's Covid-19 news conference, 
+a reporter noted that the state of Maryland's emergency hotline had received hundreds of calls in recent days seeking guidance about Mr Trump's comments.
+
+"I can't imagine why," the president said, moving quickly on. "I can't imagine that."
+
+When asked whether he took responsibility at all for the increase in calls, Mr Trump replied: 
+"No, I don't."</string>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="WzU-Oa-MXJ" firstAttribute="leading" secondItem="Fib-vf-nfK" secondAttribute="leading" constant="16" id="1G7-y8-Xv7"/>
+                                            <constraint firstItem="WzU-Oa-MXJ" firstAttribute="top" secondItem="Boq-2J-Wvi" secondAttribute="bottom" constant="8" symbolic="YES" id="2yX-jL-QI5"/>
+                                            <constraint firstItem="3qJ-g1-1ly" firstAttribute="centerX" secondItem="P9j-nd-DDl" secondAttribute="centerX" id="3D9-4a-iIH"/>
+                                            <constraint firstItem="P9j-nd-DDl" firstAttribute="top" secondItem="DeJ-zt-O2U" secondAttribute="bottom" constant="12" id="3tf-iM-s61"/>
+                                            <constraint firstItem="3qJ-g1-1ly" firstAttribute="top" secondItem="P9j-nd-DDl" secondAttribute="bottom" id="7y6-W7-5AA"/>
+                                            <constraint firstItem="via-9I-LSa" firstAttribute="top" secondItem="YnY-Lv-AKk" secondAttribute="bottom" constant="16" id="7z6-7A-bHP"/>
+                                            <constraint firstAttribute="trailing" secondItem="WzU-Oa-MXJ" secondAttribute="trailing" constant="16" id="DhK-xq-iB9"/>
+                                            <constraint firstItem="Boq-2J-Wvi" firstAttribute="centerX" secondItem="Fib-vf-nfK" secondAttribute="centerX" id="GO0-wj-nLB"/>
+                                            <constraint firstItem="DeJ-zt-O2U" firstAttribute="centerX" secondItem="Fib-vf-nfK" secondAttribute="centerX" id="KA7-6m-UuP"/>
+                                            <constraint firstItem="YnY-Lv-AKk" firstAttribute="top" secondItem="3qJ-g1-1ly" secondAttribute="bottom" constant="16" id="TOC-na-iA7"/>
+                                            <constraint firstItem="via-9I-LSa" firstAttribute="leading" secondItem="Fib-vf-nfK" secondAttribute="leading" constant="16" id="X6h-Zd-L8E"/>
+                                            <constraint firstItem="DeJ-zt-O2U" firstAttribute="top" secondItem="WzU-Oa-MXJ" secondAttribute="bottom" constant="16" id="X8C-2q-hAN"/>
+                                            <constraint firstItem="P9j-nd-DDl" firstAttribute="centerX" secondItem="Boq-2J-Wvi" secondAttribute="centerX" id="XT5-FG-2bp"/>
+                                            <constraint firstAttribute="trailing" secondItem="via-9I-LSa" secondAttribute="trailing" constant="16" id="aJC-np-gFR"/>
+                                            <constraint firstItem="8Ba-Au-Fcp" firstAttribute="centerY" secondItem="Boq-2J-Wvi" secondAttribute="centerY" id="bqs-jB-hqW"/>
+                                            <constraint firstAttribute="trailing" secondItem="8Ba-Au-Fcp" secondAttribute="trailing" constant="16" id="jL7-gi-Ibu"/>
+                                            <constraint firstItem="8Ba-Au-Fcp" firstAttribute="leading" secondItem="Boq-2J-Wvi" secondAttribute="trailing" constant="8" symbolic="YES" id="m8u-9x-Qfn"/>
+                                            <constraint firstItem="YnY-Lv-AKk" firstAttribute="leading" secondItem="Fib-vf-nfK" secondAttribute="leading" id="oZK-hg-4qc"/>
+                                            <constraint firstAttribute="trailing" secondItem="YnY-Lv-AKk" secondAttribute="trailing" id="qFo-rW-WAs"/>
+                                            <constraint firstAttribute="bottom" secondItem="via-9I-LSa" secondAttribute="bottom" priority="249" constant="16" id="vxR-Gt-Gdz"/>
+                                            <constraint firstItem="Boq-2J-Wvi" firstAttribute="top" secondItem="Fib-vf-nfK" secondAttribute="top" id="xfR-dU-B6k"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Fib-vf-nfK" firstAttribute="centerX" secondItem="Gfe-Od-qfS" secondAttribute="centerX" id="5lZ-5m-Rwx"/>
+                                    <constraint firstItem="rmx-2n-fmi" firstAttribute="bottom" secondItem="Fib-vf-nfK" secondAttribute="bottom" id="DLT-YJ-d69"/>
+                                    <constraint firstItem="Fib-vf-nfK" firstAttribute="leading" secondItem="Gfe-Od-qfS" secondAttribute="leading" id="SVy-e5-wZn"/>
+                                    <constraint firstItem="Fib-vf-nfK" firstAttribute="top" secondItem="rmx-2n-fmi" secondAttribute="top" constant="37" id="YqA-Qr-lGa"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fib-vf-nfK" secondAttribute="bottom" id="yqA-yb-d5y"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fib-vf-nfK" secondAttribute="trailing" id="zHH-aG-ETr"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="rmx-2n-fmi"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="rOu-Qp-b4h"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nW2-Rc-Grq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Gfe-Od-qfS" secondAttribute="bottom" id="HRr-ww-2Ec"/>
+                            <constraint firstItem="Gfe-Od-qfS" firstAttribute="leading" secondItem="nW2-Rc-Grq" secondAttribute="leading" id="XXT-W5-ycY"/>
+                            <constraint firstItem="Gfe-Od-qfS" firstAttribute="top" secondItem="nW2-Rc-Grq" secondAttribute="top" id="eK5-Yf-5rQ"/>
+                            <constraint firstItem="Gfe-Od-qfS" firstAttribute="bottom" secondItem="nW2-Rc-Grq" secondAttribute="bottom" priority="248" id="eTZ-wg-Ztv"/>
+                            <constraint firstItem="nW2-Rc-Grq" firstAttribute="trailing" secondItem="Gfe-Od-qfS" secondAttribute="trailing" id="oVs-nU-mQQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="q8w-hg-HDH">
+                        <barButtonItem key="rightBarButtonItem" image="bookmark" id="Ce1-zJ-e36">
+                            <connections>
+                                <action selector="bookmark:" destination="kiD-4k-BQI" id="ZRH-s9-AHZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bookmarkBarButton" destination="Ce1-zJ-e36" id="Wp7-Ac-6Jf"/>
+                        <outlet property="contentLabel" destination="via-9I-LSa" id="ekL-Qj-Prc"/>
+                        <outlet property="newsImage" destination="YnY-Lv-AKk" id="Bkc-Zi-GJ4"/>
+                        <outlet property="newsImageHeight" destination="CTp-7l-Idh" id="adk-IY-GuU"/>
+                        <outlet property="newsTitle" destination="WzU-Oa-MXJ" id="qbO-JS-Gxe"/>
+                        <outlet property="publishDate" destination="3qJ-g1-1ly" id="pM4-wu-d7Y"/>
+                        <outlet property="sourceImageView" destination="Boq-2J-Wvi" id="ZEq-HJ-bbi"/>
+                        <outlet property="sourceTitleLabel" destination="8Ba-Au-Fcp" id="XjJ-Tl-gxd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPq-dP-8wF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="886-4T-LDt" customClass="ReadModuleInitializer" customModule="NewsApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="readViewController" destination="kiD-4k-BQI" id="gRy-Y2-03c"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="2003" y="402"/>
         </scene>
         <!--Bookmarks-->
         <scene sceneID="wg7-f3-ORb">
@@ -435,6 +598,9 @@ cuts on hold</string>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ahH-lQ-sBE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="BBC" width="26.666666030883789" height="26.666666030883789"/>
         <image name="BBC4x.png" width="20" height="20"/>
