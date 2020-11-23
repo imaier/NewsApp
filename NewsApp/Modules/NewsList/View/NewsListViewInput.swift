@@ -6,13 +6,12 @@
 //  Copyright © 2020 Orion Innovation. All rights reserved.
 //
 
-protocol NewsListViewInput: class {
-
+protocol NewsListViewInput: AnyObject {
     /**
         @author Ilya Maier
         Setup initial state of the view
     */
 
     func setupInitialState()
-    func update(with model:NewsListViewModel)
+    func update(with model: NewsListViewModel)
 }

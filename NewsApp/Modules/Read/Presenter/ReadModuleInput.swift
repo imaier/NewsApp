@@ -6,6 +6,6 @@
 //  Copyright © 2020 Orion Innovation. All rights reserved.
 //
 
-protocol ReadModuleInput: class {
-    func moduleConfiguration(with model:News)
+protocol ReadModuleInput: AnyObject {
+    func moduleConfiguration(with model: News)
 }

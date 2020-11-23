@@ -9,14 +9,12 @@
 import UIKit
 
 class ReadModuleInitializer: NSObject {
-
     //Connect with object on storyboard
-    @IBOutlet weak var readViewController: ReadViewController!
+    @IBOutlet private weak var readViewController: ReadViewController!
 
     override func awakeFromNib() {
-
+        super.awakeFromNib()
         let configurator = ReadModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: readViewController)
     }
-
 }

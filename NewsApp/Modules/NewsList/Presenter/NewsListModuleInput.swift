@@ -6,6 +6,6 @@
 //  Copyright © 2020 Orion Innovation. All rights reserved.
 //
 
-protocol NewsListModuleInput: class {
+protocol NewsListModuleInput: AnyObject {
     func moduleConfiguration(with type: SectionType)
 }

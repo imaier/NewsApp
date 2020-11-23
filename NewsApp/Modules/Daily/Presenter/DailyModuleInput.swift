@@ -6,6 +6,5 @@
 //  Copyright © 2020 Orion Innovation. All rights reserved.
 //
 
-protocol DailyModuleInput: class {
-
+protocol DailyModuleInput: AnyObject {
 }

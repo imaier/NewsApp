@@ -9,7 +9,6 @@
 import XCTest
 
 class NewsListPresenterTest: XCTestCase {
-
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,17 +20,13 @@ class NewsListPresenterTest: XCTestCase {
     }
 
     class MockInteractor: NewsListInteractorInput {
-
     }
 
     class MockRouter: NewsListRouterInput {
-
     }
 
     class MockViewController: NewsListViewInput {
-
         func setupInitialState() {
-
         }
     }
 }

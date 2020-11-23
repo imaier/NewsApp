@@ -8,7 +8,6 @@
 import LiteRoute
 
 class DailyRouter: DailyRouterInput {
-
     var transitionHandler: TransitionHandler!
 
     func sectionButtonTapped(withType type: SectionType) {

@@ -9,19 +9,16 @@
 import UIKit
 
 class ReadModuleConfigurator {
-
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-
         if let viewController = viewInput as? ReadViewController {
             configure(viewController: viewController)
         }
     }
 
     private func configure(viewController: ReadViewController) {
-
         let router = ReadRouter()
         router.transitionHandler = viewController
-        
+
         let presenter = ReadPresenter()
         presenter.view = viewController
         presenter.router = router
@@ -32,5 +29,4 @@ class ReadModuleConfigurator {
         presenter.interactor = interactor
         viewController.output = presenter
     }
-
 }

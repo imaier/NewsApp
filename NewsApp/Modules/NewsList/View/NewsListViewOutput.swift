@@ -8,14 +8,13 @@
 import Foundation
 
 protocol NewsListViewOutput {
-
     /**
         @author Ilya Maier
         Notify presenter that view is ready
     */
 
     func viewIsReady()
-    func getUrl(_ url:String, complition:@escaping (_ url: String, _ data: Data?) -> Void)
-    func onDetailsTapped(withNews model:News)
-    func onBookmarkTapped(withNews model:News)
+    func getUrl(_ url: String, complition:@escaping (_ url: String, _ data: Data?) -> Void)
+    func onDetailsTapped(withNews model: News)
+    func onBookmarkTapped(withNews model: News)
 }

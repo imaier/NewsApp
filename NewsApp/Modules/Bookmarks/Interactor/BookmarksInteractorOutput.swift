@@ -8,6 +8,5 @@
 
 import Foundation
 
-protocol BookmarksInteractorOutput: class {
-
+protocol BookmarksInteractorOutput: AnyObject {
 }

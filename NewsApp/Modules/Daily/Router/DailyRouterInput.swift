@@ -9,9 +9,8 @@
 import Foundation
 
 protocol DailyRouterInput {
+    func sectionButtonTapped(withType type: SectionType)
 
-    func sectionButtonTapped(withType type:SectionType)
-    
     func detailsButtonTapped(withNews model: News)
 }
 
@@ -44,7 +43,7 @@ if let rrr = ret {
         return nil
     }
 }*/
-    
+
     /*
     .thenChain({ (moduleInput:NewsListModuleInput?) -> RamblerViperModuleOutput? in
     moduleInput?.moduleConfiguration(with: type)

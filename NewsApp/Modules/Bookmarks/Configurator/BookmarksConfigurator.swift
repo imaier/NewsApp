@@ -9,16 +9,13 @@
 import UIKit
 
 class BookmarksModuleConfigurator {
-
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-
         if let viewController = viewInput as? BookmarksViewController {
             configure(viewController: viewController)
         }
     }
 
     private func configure(viewController: BookmarksViewController) {
-
         let router = BookmarksRouter()
 
         let presenter = BookmarksPresenter()
@@ -31,5 +28,4 @@ class BookmarksModuleConfigurator {
         presenter.interactor = interactor
         viewController.output = presenter
     }
-
 }

@@ -9,6 +9,6 @@
 import Foundation
 
 struct NewsSource {
-    var id : String?
-    var name : String
+    var id: String?
+    var name: String
 }

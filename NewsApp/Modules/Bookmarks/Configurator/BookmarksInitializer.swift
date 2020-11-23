@@ -9,14 +9,12 @@
 import UIKit
 
 class BookmarksModuleInitializer: NSObject {
-
     //Connect with object on storyboard
-    @IBOutlet weak var bookmarksViewController: BookmarksViewController!
+    @IBOutlet private weak var bookmarksViewController: BookmarksViewController!
 
     override func awakeFromNib() {
-
+        super.awakeFromNib()
         let configurator = BookmarksModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: bookmarksViewController)
     }
-
 }

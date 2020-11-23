@@ -8,7 +8,6 @@
 import Foundation
 
 protocol DailyViewOutput {
-
     /**
         @author Ilya Maier
         Notify presenter that view is ready
@@ -16,8 +15,8 @@ protocol DailyViewOutput {
 
     func viewIsReady()
 
-    func sectionButtonTapped(withType type:SectionType)
-    func onDetailsTapped(withNews model:News)
-    func onBookmarkTapped(withNews model:News)
-    func getUrl(_ url:String, complition:@escaping (_ url: String, _ data: Data?) -> Void)
+    func sectionButtonTapped(withType type: SectionType)
+    func onDetailsTapped(withNews model: News)
+    func onBookmarkTapped(withNews model: News)
+    func getUrl(_ url: String, complition:@escaping (_ url: String, _ data: Data?) -> Void)
 }

@@ -9,21 +9,22 @@
 import UIKit
 
 class LatestNewsCellView: UITableViewCell, NewsCellDetails {
-    @IBOutlet weak var newsImage: UIImageView!
-    @IBOutlet weak var newsTitle: UILabel!
-    @IBOutlet weak var sourceImageView: UIImageView!
-    @IBOutlet weak var sourceTitleLabel: UILabel!
-    @IBOutlet weak var bookmarkButton: UIButton!
-    @IBOutlet weak var detailsButton: UIButton!
-    @IBAction func details(_ sender: Any) {
+    @IBOutlet private weak var newsImage: UIImageView!
+    @IBOutlet private weak var newsTitle: UILabel!
+    @IBOutlet private weak var sourceImageView: UIImageView!
+    @IBOutlet private weak var sourceTitleLabel: UILabel!
+    @IBOutlet private weak var bookmarkButton: UIButton!
+    @IBOutlet private weak var detailsButton: UIButton!
+
+    @IBAction private func details(_ sender: Any) {
         onMoreTapped()
     }
-    @IBAction func bookmark(_ sender: Any) {
+    @IBAction private func bookmark(_ sender: Any) {
         onBookmarkTapped()
     }
 
     // MARK: - NewsCellDetails protocol
-    var bookmarkState:Bool {
+    var bookmarkState: Bool {
         get {
             return bookmarkButton.isSelected
         }

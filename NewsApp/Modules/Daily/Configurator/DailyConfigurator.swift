@@ -9,16 +9,13 @@
 import UIKit
 
 class DailyModuleConfigurator {
-
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-
         if let viewController = viewInput as? DailyViewController {
             configure(viewController: viewController)
         }
     }
 
     private func configure(viewController: DailyViewController) {
-
         let router = DailyRouter()
         router.transitionHandler = viewController
 
@@ -32,5 +29,4 @@ class DailyModuleConfigurator {
         presenter.interactor = interactor
         viewController.output = presenter
     }
-
 }

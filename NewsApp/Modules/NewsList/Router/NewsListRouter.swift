@@ -8,7 +8,6 @@
 import LiteRoute
 
 class NewsListRouter: NewsListRouterInput {
-
     var transitionHandler: TransitionHandler!
 
     func detailsButtonTapped(withNews model: News) {

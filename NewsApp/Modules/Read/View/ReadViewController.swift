@@ -9,25 +9,24 @@
 import UIKit
 
 class ReadViewController: UIViewController, ReadViewInput {
-
     var output: ReadViewOutput!
 
-    @IBOutlet weak var sourceImageView: UIImageView!
-    @IBOutlet weak var sourceTitleLabel: UILabel!
-    @IBOutlet weak var newsTitle: UILabel!
-    @IBOutlet weak var publishDate: UILabel!
-    @IBOutlet weak var newsImage: UIImageView!
-    @IBOutlet weak var contentLabel: UILabel!
-    @IBOutlet weak var bookmarkBarButton: UIBarButtonItem!
-    @IBOutlet weak var newsImageHeight: NSLayoutConstraint!
+    @IBOutlet private weak var sourceImageView: UIImageView!
+    @IBOutlet private weak var sourceTitleLabel: UILabel!
+    @IBOutlet private weak var newsTitle: UILabel!
+    @IBOutlet private weak var publishDate: UILabel!
+    @IBOutlet private weak var newsImage: UIImageView!
+    @IBOutlet private weak var contentLabel: UILabel!
+    @IBOutlet private weak var bookmarkBarButton: UIBarButtonItem!
+    @IBOutlet private weak var newsImageHeight: NSLayoutConstraint!
 
-    @IBAction func bookmark(_ sender: Any) {
+    @IBAction private func bookmark(_ sender: Any) {
         output.onBookmarkTapped()
     }
-    @IBAction func share(_ sender: Any) {
+    @IBAction private func share(_ sender: Any) {
         output.onShareTapped()
     }
-    
+
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,8 +49,8 @@ class ReadViewController: UIViewController, ReadViewInput {
             let formatter = DateFormatter()
             formatter.dateStyle = .medium
             formatter.timeStyle = .none
-            formatter.locale =  Locale(identifier: "en_US")
-            let result  = formatter.string(from: date)
+            formatter.locale = Locale(identifier: "en_US")
+            let result = formatter.string(from: date)
             publishDate.text = result
         } else {
             publishDate.text = model.publishedAt
@@ -61,7 +60,7 @@ class ReadViewController: UIViewController, ReadViewInput {
         bookmarkBarButton.image =
             model.inBoookmarks == false ? UIImage(named: "bookmark") : UIImage(named: "bookmarkSelected")
         //bookmarkButton.isSelected  = model.inBoookmarks
-        self.output.getUrl(model.urlToImage) { [weak self] (_, data) in
+        self.output.getUrl(model.urlToImage) { [weak self] _, data in
             guard let data = data else {
                 self?.setNewsImage(UIImage(named: "latestnews"))
                 return
@@ -71,7 +70,7 @@ class ReadViewController: UIViewController, ReadViewInput {
         }
     }
 
-    func setNewsImage(_ image:UIImage?) {
+    func setNewsImage(_ image: UIImage?) {
         guard let image = image  else {
             self.newsImageHeight.constant = 80
             self.newsImage.image = nil

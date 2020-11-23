@@ -8,7 +8,6 @@
 import Foundation
 
 class DailyPresenter: DailyModuleInput, DailyViewOutput, DailyInteractorOutput {
-
     weak var view: DailyViewInput!
     var interactor: DailyInteractorInput!
     var router: DailyRouterInput!
@@ -32,8 +31,8 @@ class DailyPresenter: DailyModuleInput, DailyViewOutput, DailyInteractorOutput {
     func topStoriesDataChanged(_ articles: [News]) {
         //prepare view model
         var array = [News]()
-        if articles.count > 0 {
-            array.append(articles.first!)
+        if let firstItem = articles.first {
+            array.append(firstItem)
         }
         topStoriesViewModel = TopStoriesViewModel(articles: array)
         updateDataForView()
@@ -58,8 +57,8 @@ class DailyPresenter: DailyModuleInput, DailyViewOutput, DailyInteractorOutput {
         view.setViewModel(forSections: sectionViewModel)
     }
 
-    func sectionButtonTapped(withType type:SectionType) {
-        router.sectionButtonTapped(withType:type)
+    func sectionButtonTapped(withType type: SectionType) {
+        router.sectionButtonTapped(withType: type)
         //view.performSegue(to: type)
     }
     func onDetailsTapped(withNews model: News) {
@@ -68,7 +67,7 @@ class DailyPresenter: DailyModuleInput, DailyViewOutput, DailyInteractorOutput {
     func onBookmarkTapped(withNews model: News) {
     }
 
-    func getUrl(_ url:String, complition:@escaping (_ url: String, _ data: Data?) -> Void) {
+    func getUrl(_ url: String, complition:@escaping (_ url: String, _ data: Data?) -> Void) {
         interactor.getUrl(url, complition: complition)
     }
 }

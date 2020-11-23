@@ -9,7 +9,6 @@
 import XCTest
 
 class ReadPresenterTest: XCTestCase {
-
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,17 +20,13 @@ class ReadPresenterTest: XCTestCase {
     }
 
     class MockInteractor: ReadInteractorInput {
-
     }
 
     class MockRouter: ReadRouterInput {
-
     }
 
     class MockViewController: ReadViewInput {
-
         func setupInitialState() {
-
         }
     }
 }

@@ -6,6 +6,5 @@
 //  Copyright © 2020 Orion Innovation. All rights reserved.
 //
 
-protocol SearchModuleInput: class {
-
+protocol SearchModuleInput: AnyObject {
 }

@@ -11,5 +11,5 @@ import Foundation
 protocol DailyInteractorInput {
     func getTopStories()
     func getLatestNews()
-    func getUrl(_ url:String, complition:@escaping (_ url: String, _ data: Data?) -> Void)
+    func getUrl(_ url: String, complition:@escaping (_ url: String, _ data: Data?) -> Void)
 }

@@ -9,9 +9,8 @@
 import UIKit
 
 extension UIView {
-
     @discardableResult   // 1
-    static func fromNib<T : UIView>() -> T? {   // 2
+    static func fromNib<T: UIView>() -> T? {   // 2
         let nibName = String(describing: T.self)
         guard let contentView = Bundle(for: T.self)
                 .loadNibNamed(nibName, owner: self, options: nil)?.first as? T else {    // 3
@@ -23,8 +22,9 @@ extension UIView {
 }
 
 class NewsHeaderView: UIView {
-
+    // swiftlint:disable:next private_outlet
     @IBOutlet weak var headerTitle: UILabel!
+    // swiftlint:disable:next private_outlet
     @IBOutlet weak var headerButton: UIButton!
 
     var onHeaderButtonTapped: () -> Void = {}
@@ -37,7 +37,7 @@ class NewsHeaderView: UIView {
        super.init(frame: CGRect.zero)  // 4.
     }
 
-    @IBAction func headerButtonTapped(_ sender: Any) {
+    @IBAction private func headerButtonTapped(_ sender: Any) {
         onHeaderButtonTapped()
     }
 }

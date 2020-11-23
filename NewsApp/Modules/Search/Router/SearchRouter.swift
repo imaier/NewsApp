@@ -7,5 +7,4 @@
 //
 
 class SearchRouter: SearchRouterInput {
-
 }

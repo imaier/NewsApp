@@ -7,12 +7,10 @@
 //
 
 class SearchPresenter: SearchModuleInput, SearchViewOutput, SearchInteractorOutput {
-
     weak var view: SearchViewInput!
     var interactor: SearchInteractorInput!
     var router: SearchRouterInput!
 
     func viewIsReady() {
-
     }
 }

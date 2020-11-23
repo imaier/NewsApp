@@ -7,7 +7,5 @@
 //
 
 class BookmarksInteractor: BookmarksInteractorInput {
-
     weak var output: BookmarksInteractorOutput!
-
 }

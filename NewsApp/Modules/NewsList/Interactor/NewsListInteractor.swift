@@ -8,7 +8,6 @@
 import Foundation
 
 class NewsListInteractor: NewsListInteractorInput {
-
     weak var output: NewsListInteractorOutput!
 
     private var newsContainer = NewsContainer()
@@ -22,7 +21,7 @@ class NewsListInteractor: NewsListInteractorInput {
         if type == .latestNews {
             loadFunc = NewsLoaderSevice.shared.loadNews
         }
-        loadFunc(newsContainer.filter, page) { (error, results) in
+        loadFunc(newsContainer.filter, page) { error, results in
             if let (articles, totalResults) = results {
                 if page == 1 {
                     self.newsContainer.articles = articles
@@ -40,7 +39,7 @@ class NewsListInteractor: NewsListInteractorInput {
             }
         }
     }
-    
+
     func getUrl(_ url: String, complition: @escaping (String, Data?) -> Void) {
         CachedDataLoader.shared.loadData(url: url, completion: complition)
     }

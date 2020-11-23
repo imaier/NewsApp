@@ -7,7 +7,6 @@
 //
 
 protocol SearchViewOutput {
-
     /**
         @author Ilya Maier
         Notify presenter that view is ready

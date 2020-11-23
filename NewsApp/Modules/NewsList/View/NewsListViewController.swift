@@ -9,9 +9,8 @@
 import UIKit
 
 class NewsListViewController: UIViewController, NewsListViewInput {
-
     var output: (NewsListViewOutput & NewsListModuleInput)!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
 
     private let cellIdentifier = "newsListCellIdentifier"
     var viewModel = NewsListViewModel(navigationTitle: "", articles: [])
@@ -43,7 +42,7 @@ extension NewsListViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell  = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
         if let newsCell = cell as? NewsListCellDetails {
             let model = self.viewModel.articles[indexPath.row]
@@ -57,7 +56,7 @@ extension NewsListViewController: UITableViewDataSource, UITableViewDelegate {
             //cell.layer.borderWidth = 1
             //cell.layer.borderColor = UIColor.red.cgColor
             newsCell.headImage = nil
-            self.output.getUrl(model.urlToImage) { (_, data) in
+            self.output.getUrl(model.urlToImage) { _, data in
                 if newsCell.title == model.title {
                     guard let data = data else {
                         newsCell.headImage = UIImage(named: "latestnews")

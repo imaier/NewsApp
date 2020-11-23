@@ -6,13 +6,12 @@
 //  Copyright © 2020 Orion Innovation. All rights reserved.
 //
 
-protocol ReadViewInput: class {
-
+protocol ReadViewInput: AnyObject {
     /**
         @author Ilya Maier
         Setup initial state of the view
     */
 
     func setupInitialState()
-    func update(with model:News)
+    func update(with model: News)
 }

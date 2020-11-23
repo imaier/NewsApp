@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol NewsListCellDetails : NewsCellDetails {
-    var relativDate: String {get set}
+protocol NewsListCellDetails: NewsCellDetails {
+    var relativDate: String { get set }
 }
 
 extension NewsListCellDetails {
-    func setRelativDate(with date:Date) {
+    func setRelativDate(with date: Date) {
         let formatter = RelativeDateTimeFormatter()
         let now = Date()
         let relativeTime = formatter.localizedString(for: date, relativeTo: now)
@@ -35,7 +35,6 @@ extension NewsListCellDetails {
 }
 
 class NewsListViewCell: UITableViewCell, NewsListCellDetails {
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -60,6 +59,7 @@ class NewsListViewCell: UITableViewCell, NewsListCellDetails {
     @IBOutlet private weak var relativDateLabel: UILabel!
     @IBOutlet private weak var bookmarkButton: UIButton!
     @IBOutlet private weak var detailsButton: UIButton!
+
     @IBAction private func details(_ sender: Any) {
         onMoreTapped()
     }
@@ -68,7 +68,7 @@ class NewsListViewCell: UITableViewCell, NewsListCellDetails {
     }
 
     // MARK: - NewsCellDetails protocol
-    var bookmarkState:Bool {
+    var bookmarkState: Bool {
         get {
             return bookmarkButton.isSelected
         }

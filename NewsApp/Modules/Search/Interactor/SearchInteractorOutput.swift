@@ -8,6 +8,5 @@
 
 import Foundation
 
-protocol SearchInteractorOutput: class {
-
+protocol SearchInteractorOutput: AnyObject {
 }

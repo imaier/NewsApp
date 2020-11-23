@@ -9,7 +9,6 @@
 import UIKit
 
 class SearchViewController: UIViewController, SearchViewInput {
-
     var output: SearchViewOutput!
 
     // MARK: Life cycle
@@ -17,7 +16,6 @@ class SearchViewController: UIViewController, SearchViewInput {
         super.viewDidLoad()
         output.viewIsReady()
     }
-
 
     // MARK: SearchViewInput
     func setupInitialState() {

@@ -7,7 +7,6 @@
 //
 
 protocol BookmarksViewOutput {
-
     /**
         @author Ilya Maier
         Notify presenter that view is ready

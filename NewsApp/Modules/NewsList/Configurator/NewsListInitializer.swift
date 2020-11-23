@@ -9,14 +9,12 @@
 import UIKit
 
 class NewsListModuleInitializer: NSObject {
-
     //Connect with object on storyboard
-    @IBOutlet weak var newslistViewController: NewsListViewController!
+    @IBOutlet private weak var newslistViewController: NewsListViewController!
 
     override func awakeFromNib() {
-
+        super.awakeFromNib()
         let configurator = NewsListModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: newslistViewController)
     }
-
 }

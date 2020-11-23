@@ -8,7 +8,6 @@
 import Foundation
 
 class DailyInteractor: DailyInteractorInput {
-
     weak var output: DailyInteractorOutput!
 
     private var topStories = NewsContainer()
@@ -20,7 +19,7 @@ class DailyInteractor: DailyInteractorInput {
         if topStories.totalResults > 0 {
             page = topStories.articles.count / topStories.filter.pageSize + 1
         }
-        NewsLoaderSevice.shared.loadTopStories(with: topStories.filter, page: page) { (error, results) in
+        NewsLoaderSevice.shared.loadTopStories(with: topStories.filter, page: page) { error, results in
             if let (articles, totalResults) = results {
                 if page == 1 {
                     self.topStories.articles = articles
@@ -44,7 +43,7 @@ class DailyInteractor: DailyInteractorInput {
         if latestNews.totalResults > 0 {
             page = latestNews.articles.count / latestNews.filter.pageSize + 1
         }
-        NewsLoaderSevice.shared.loadNews(with: latestNews.filter, page: page) { (error, results) in
+        NewsLoaderSevice.shared.loadNews(with: latestNews.filter, page: page) { error, results in
             if let (articles, totalResults) = results {
                 if page == 1 {
                     self.latestNews.articles = articles
@@ -63,8 +62,7 @@ class DailyInteractor: DailyInteractorInput {
         }
     }
 
-    func getUrl(_ url:String, complition:@escaping (_ url: String, _ data: Data?) -> Void) {
+    func getUrl(_ url: String, complition:@escaping (_ url: String, _ data: Data?) -> Void) {
         CachedDataLoader.shared.loadData(url: url, completion: complition)
     }
-
 }

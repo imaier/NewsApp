@@ -8,7 +8,6 @@
 import Foundation
 
 class ReadInteractor: ReadInteractorInput {
-
     weak var output: ReadInteractorOutput!
 
     func getUrl(_ url: String, complition: @escaping (String, Data?) -> Void) {

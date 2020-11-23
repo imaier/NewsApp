@@ -9,7 +9,6 @@
 import UIKit
 
 class BookmarksViewController: UIViewController, BookmarksViewInput {
-
     var output: BookmarksViewOutput!
 
     // MARK: Life cycle
@@ -17,7 +16,6 @@ class BookmarksViewController: UIViewController, BookmarksViewInput {
         super.viewDidLoad()
         output.viewIsReady()
     }
-
 
     // MARK: BookmarksViewInput
     func setupInitialState() {

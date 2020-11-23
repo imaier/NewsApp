@@ -8,6 +8,5 @@
 
 import Foundation
 
-protocol ReadInteractorOutput: class {
-
+protocol ReadInteractorOutput: AnyObject {
 }

@@ -7,7 +7,5 @@
 //
 
 class SearchInteractor: SearchInteractorInput {
-
     weak var output: SearchInteractorOutput!
-
 }

@@ -60,10 +60,8 @@ extension StringProtocol {
 }
 
 extension String {
-
     func contains(subString string: String, options: String.CompareOptions = []) -> Bool {
         let subStringIndex = index(of: string, options: options) ?? endIndex
         return subStringIndex != endIndex
     }
-
 }

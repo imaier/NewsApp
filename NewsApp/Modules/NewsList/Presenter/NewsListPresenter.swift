@@ -8,7 +8,6 @@
 import Foundation
 
 class NewsListPresenter: NSObject, NewsListModuleInput, NewsListViewOutput, NewsListInteractorOutput {
-
     weak var view: NewsListViewInput!
     var interactor: NewsListInteractorInput!
     var router: NewsListRouterInput!
@@ -17,7 +16,6 @@ class NewsListPresenter: NSObject, NewsListModuleInput, NewsListViewOutput, News
     private var model = NewsListViewModel(navigationTitle: "", articles: [])
 
     func viewIsReady() {
-
     }
 
     // NewsListModuleInput
@@ -30,7 +28,7 @@ class NewsListPresenter: NSObject, NewsListModuleInput, NewsListViewOutput, News
         case .topStories:
             model.navigationTitle = "Top Stories"
         }
-        view.update(with:model)
+        view.update(with: model)
     }
 
     func dataChanged(_ articles: [News]) {
@@ -38,7 +36,7 @@ class NewsListPresenter: NSObject, NewsListModuleInput, NewsListViewOutput, News
         self.view.update(with: self.model)
     }
 
-    func getUrl(_ url:String, complition:@escaping (_ url: String, _ data: Data?) -> Void) {
+    func getUrl(_ url: String, complition:@escaping (_ url: String, _ data: Data?) -> Void) {
         interactor.getUrl(url, complition: complition)
     }
 

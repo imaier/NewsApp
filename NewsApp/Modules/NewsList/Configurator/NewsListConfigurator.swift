@@ -9,16 +9,13 @@
 import UIKit
 
 class NewsListModuleConfigurator {
-
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-
         if let viewController = viewInput as? NewsListViewController {
             configure(viewController: viewController)
         }
     }
 
     private func configure(viewController: NewsListViewController) {
-
         let router = NewsListRouter()
         router.transitionHandler = viewController
 
@@ -32,5 +29,4 @@ class NewsListModuleConfigurator {
         presenter.interactor = interactor
         viewController.output = presenter
     }
-
 }

@@ -6,15 +6,18 @@
 //  Copyright © 2020 Orion Innovation. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 import SwiftyJSON
 
 class NewsLoaderSevice: NSObject {
-    static let shared  = NewsLoaderSevice()
+    static let shared = NewsLoaderSevice()
 
-    func loadNews(with filter:FilterData, page pageNum: Int = 0,
-                  completion:@escaping (_ error:Error?, _ result:([News], Int)?) -> Void) {
+    func loadNews(
+        with filter: FilterData,
+        page pageNum: Int = 0,
+        completion:@escaping (_ error: Error?, _ result: ([News], Int)?) -> Void
+    ) {
         var params = paramsForFilter(filter)
 
         params["country"] = FilterData.countries()[filter.country]
@@ -29,8 +32,11 @@ class NewsLoaderSevice: NSObject {
         self.loadAndParse(request: "https://newsapi.org/v2/top-headlines", parameters: params, completion: completion)
     }
 
-    func loadTopStories(with filter:FilterData, page pageNum: Int = 0,
-                        completion:@escaping (_ error:Error?, _ result:([News], Int)?) -> Void) {
+    func loadTopStories(
+        with filter: FilterData,
+        page pageNum: Int = 0,
+        completion:@escaping (_ error: Error?, _ result: ([News], Int)?) -> Void
+    ) {
         var params = paramsForFilter(filter)
 
         if pageNum > 0 {
@@ -54,9 +60,11 @@ class NewsLoaderSevice: NSObject {
         self.loadAndParse(request: "https://newsapi.org/v2/everything", parameters: params, completion: completion)
     }
 
-    private func loadAndParse<Parameters: Encodable>(request url:String,
-                                                     parameters params: Parameters?,
-                                                     completion:@escaping (_ error:Error?, _ result:([News], Int)?) -> Void) {
+    private func loadAndParse<Parameters: Encodable>(
+        request url: String,
+        parameters params: Parameters?,
+        completion:@escaping (_ error: Error?, _ result: ([News], Int)?) -> Void
+    ) {
         AF.request(url, parameters: params)
           //.validate(statusCode: 200..<500)
           //.validate(contentType: ["application/json"])
@@ -72,7 +80,7 @@ class NewsLoaderSevice: NSObject {
                 let articles = json["articles"]
                 let totalResults = json["totalResults"].intValue
                 if articles.type == .array {
-                    let newsArray = articles.arrayValue.map { (jsonNews) -> News in
+                    let newsArray = articles.arrayValue.map { jsonNews -> News in
                         let sourceJson = jsonNews["source"]
                         let source = NewsSource(id: sourceJson["id"].string, name: sourceJson["name"].stringValue)
                         return News(newsSource: source,
@@ -99,7 +107,7 @@ class NewsLoaderSevice: NSObject {
         }
     }
 
-    private func paramsForFilter(_ filter: FilterData) -> [String:String] {
+    private func paramsForFilter(_ filter: FilterData) -> [String: String] {
         var params = ["apiKey": "e85917ff05654dc3bcb04e750ac9cbf0"]
 
         if !filter.keywords.isEmpty {

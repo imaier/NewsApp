@@ -6,14 +6,13 @@
 //  Copyright © 2020 Orion Innovation. All rights reserved.
 //
 
-protocol DailyViewInput: class {
-
+protocol DailyViewInput: AnyObject {
     /**
         @author Ilya Maier
         Setup initial state of the view
     */
 
     func setupInitialState()
-    func setViewModel(forSections sections:[NewsSectionViewModel])
-    func performSegue(to type:SectionType)
+    func setViewModel(forSections sections: [NewsSectionViewModel])
+    func performSegue(to type: SectionType)
 }

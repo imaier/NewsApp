@@ -6,8 +6,7 @@
 //  Copyright © 2020 Orion Innovation. All rights reserved.
 //
 
-protocol BookmarksViewInput: class {
-
+protocol BookmarksViewInput: AnyObject {
     /**
         @author Ilya Maier
         Setup initial state of the view

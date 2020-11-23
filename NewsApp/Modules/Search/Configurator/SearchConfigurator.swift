@@ -9,16 +9,13 @@
 import UIKit
 
 class SearchModuleConfigurator {
-
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-
         if let viewController = viewInput as? SearchViewController {
             configure(viewController: viewController)
         }
     }
 
     private func configure(viewController: SearchViewController) {
-
         let router = SearchRouter()
 
         let presenter = SearchPresenter()
@@ -31,5 +28,4 @@ class SearchModuleConfigurator {
         presenter.interactor = interactor
         viewController.output = presenter
     }
-
 }

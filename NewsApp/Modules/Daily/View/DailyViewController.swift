@@ -9,7 +9,6 @@
 import UIKit
 
 class DailyViewController: UIViewController, DailyViewInput {
-
     var output: DailyViewOutput!
 
     private var sectionsViewModel: [NewsSectionViewModel] = []
@@ -30,7 +29,7 @@ class DailyViewController: UIViewController, DailyViewInput {
         performSegue(withIdentifier: "SectionDetails", sender: type)
     }
 
-    func setViewModel(forSections sections:[NewsSectionViewModel]) {
+    func setViewModel(forSections sections: [NewsSectionViewModel]) {
         self.sectionsViewModel = sections
         self.tableView.reloadData()
     }
@@ -67,7 +66,7 @@ extension DailyViewController: UITableViewDataSource, UITableViewDelegate {
             newsCell.sourceTitle = sourceAndTime
             //cell.layer.borderWidth = 1
             //cell.layer.borderColor = UIColor.red.cgColor
-            self.output.getUrl(model.urlToImage) { (_, data) in
+            self.output.getUrl(model.urlToImage) { _, data in
                 if newsCell.title == model.title {
                     guard let data = data else {
                         newsCell.headImage = UIImage(named: "latestnews")
@@ -77,7 +76,6 @@ extension DailyViewController: UITableViewDataSource, UITableViewDelegate {
                     newsCell.headImage = image
                 }
             }
-
         }
         return cell
     }
@@ -117,5 +115,4 @@ extension DailyViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0
     }
-
 }

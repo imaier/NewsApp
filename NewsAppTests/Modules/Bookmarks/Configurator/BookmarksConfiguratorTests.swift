@@ -9,7 +9,6 @@
 import XCTest
 
 class BookmarksModuleConfiguratorTests: XCTestCase {
-
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,7 +20,6 @@ class BookmarksModuleConfiguratorTests: XCTestCase {
     }
 
     func testConfigureModuleForViewController() {
-
         //given
         let viewController = BookmarksViewControllerMock()
         let configurator = BookmarksModuleConfigurator()
@@ -33,17 +31,18 @@ class BookmarksModuleConfiguratorTests: XCTestCase {
         XCTAssertNotNil(viewController.output, "BookmarksViewController is nil after configuration")
         XCTAssertTrue(viewController.output is BookmarksPresenter, "output is not BookmarksPresenter")
 
+        // swiftlint:disable:next force_cast
         let presenter: BookmarksPresenter = viewController.output as! BookmarksPresenter
         XCTAssertNotNil(presenter.view, "view in BookmarksPresenter is nil after configuration")
         XCTAssertNotNil(presenter.router, "router in BookmarksPresenter is nil after configuration")
         XCTAssertTrue(presenter.router is BookmarksRouter, "router is not BookmarksRouter")
 
+        // swiftlint:disable:next force_cast
         let interactor: BookmarksInteractor = presenter.interactor as! BookmarksInteractor
         XCTAssertNotNil(interactor.output, "output in BookmarksInteractor is nil after configuration")
     }
 
     class BookmarksViewControllerMock: BookmarksViewController {
-
         var setupInitialStateDidCall = false
 
         override func setupInitialState() {

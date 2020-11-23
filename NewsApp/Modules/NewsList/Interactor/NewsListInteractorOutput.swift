@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol NewsListInteractorOutput: class {
-    func dataChanged(_ articles:[News])
+protocol NewsListInteractorOutput: AnyObject {
+    func dataChanged(_ articles: [News])
 }
