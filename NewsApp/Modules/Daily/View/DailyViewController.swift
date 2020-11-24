@@ -45,7 +45,6 @@ extension DailyViewController: UITableViewDataSource, UITableViewDelegate {
             let model = sectionsViewModel[indexPath.section].articles[indexPath.row]
             newsCell.bookmarkState = model.inBoookmarks
             newsCell.title = model.title
-            newsCell.headImage = nil
             newsCell.onMoreTapped = { [weak self] in
                 self?.output.onDetailsTapped(withNews: model)
             }
@@ -64,17 +63,20 @@ extension DailyViewController: UITableViewDataSource, UITableViewDelegate {
                 sourceAndTime += relativeTime
             }
             newsCell.sourceTitle = sourceAndTime
-            //cell.layer.borderWidth = 1
-            //cell.layer.borderColor = UIColor.red.cgColor
-            self.output.getUrl(model.urlToImage) { _, data in
-                if newsCell.title == model.title {
-                    guard let data = data else {
-                        newsCell.headImage = UIImage(named: "latestnews")
-                        return
+            if let urlToImage = model.urlToImage {
+                newsCell.headImage = nil
+                output.getUrl(urlToImage) { _, data in
+                    if newsCell.title == model.title {
+                        guard let data = data else {
+                            newsCell.headImage = UIImage(named: "latestnews")
+                            return
+                        }
+                        let image = UIImage(data: data)
+                        newsCell.headImage = image
                     }
-                    let image = UIImage(data: data)
-                    newsCell.headImage = image
                 }
+            } else {
+                newsCell.headImage = UIImage(named: "latestnews")
             }
         }
         return cell
@@ -89,15 +91,15 @@ extension DailyViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.sectionsViewModel[section].sectionTitle
+        return sectionsViewModel[section].sectionTitle
     }
 
     // MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view: NewsHeaderView? = .fromNib()
-        view?.headerTitle.text = self.sectionsViewModel[section].sectionTitle
-        view?.headerButton.setTitle(self.sectionsViewModel[section].sectionButtonTitle, for: .normal)
-        let type = self.sectionsViewModel[section].type
+        view?.headerTitle.text = sectionsViewModel[section].sectionTitle
+        view?.headerButton.setTitle(sectionsViewModel[section].sectionButtonTitle, for: .normal)
+        let type = sectionsViewModel[section].type
         view?.onHeaderButtonTapped = { [weak self] in
             self?.output.sectionButtonTapped(withType: type)
         }

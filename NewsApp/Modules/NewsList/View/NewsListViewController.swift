@@ -53,18 +53,20 @@ extension NewsListViewController: UITableViewDataSource, UITableViewDelegate {
             newsCell.onBookmarkTapped = { [weak self] in
                 self?.output.onBookmarkTapped(withNews: model)
             }
-            //cell.layer.borderWidth = 1
-            //cell.layer.borderColor = UIColor.red.cgColor
-            newsCell.headImage = nil
-            self.output.getUrl(model.urlToImage) { _, data in
-                if newsCell.title == model.title {
-                    guard let data = data else {
-                        newsCell.headImage = UIImage(named: "latestnews")
-                        return
+            if let urlToImage = model.urlToImage {
+                newsCell.headImage = nil
+                self.output.getUrl(urlToImage) { _, data in
+                    if newsCell.title == model.title {
+                        guard let data = data else {
+                            newsCell.headImage = UIImage(named: "latestnews")
+                            return
+                        }
+                        let image = UIImage(data: data)
+                        newsCell.headImage = image
                     }
-                    let image = UIImage(data: data)
-                    newsCell.headImage = image
                 }
+            } else {
+                newsCell.headImage = UIImage(named: "latestnews")
             }
         }
         return cell

@@ -56,17 +56,21 @@ class ReadViewController: UIViewController, ReadViewInput {
             publishDate.text = model.publishedAt
         }
 
-        contentLabel.text = model.description + "\n" + model.content
+        contentLabel.text = model.description + "\n" + (model.content ?? "")
         bookmarkBarButton.image =
             model.inBoookmarks == false ? UIImage(named: "bookmark") : UIImage(named: "bookmarkSelected")
         //bookmarkButton.isSelected  = model.inBoookmarks
-        self.output.getUrl(model.urlToImage) { [weak self] _, data in
-            guard let data = data else {
-                self?.setNewsImage(UIImage(named: "latestnews"))
-                return
+        if let urlToImage = model.urlToImage {
+            self.output.getUrl(urlToImage) { [weak self] _, data in
+                guard let data = data else {
+                    self?.setNewsImage(UIImage(named: "latestnews"))
+                    return
+                }
+                let image = UIImage(data: data)
+                self?.setNewsImage(image)
             }
-            let image = UIImage(data: data)
-            self?.setNewsImage(image)
+        } else {
+            self.setNewsImage(UIImage(named: "latestnews"))
         }
     }
 

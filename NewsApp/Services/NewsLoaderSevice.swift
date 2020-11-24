@@ -8,7 +8,6 @@
 
 import Alamofire
 import Foundation
-import SwiftyJSON
 
 class NewsLoaderSevice: NSObject {
     static let shared = NewsLoaderSevice()
@@ -79,31 +78,25 @@ class NewsLoaderSevice: NSObject {
             switch response.result {
             case .success(let value):
                 guard let data = value else {
-                    completion(nil, nil)
+                    DispatchQueue.main.async {
+                        completion(nil, nil)
+                    }
                     return
                 }
-                let json = JSON(data)
-                let articles = json["articles"]
-                let totalResults = json["totalResults"].intValue
-                if articles.type == .array {
-                    let newsArray = articles.arrayValue.map { jsonNews -> News in
-                        let sourceJson = jsonNews["source"]
-                        let source = NewsSource(id: sourceJson["id"].string, name: sourceJson["name"].stringValue)
-                        return News(newsSource: source,
-                                    urlToImage: jsonNews["urlToImage"].stringValue,
-                                    title: jsonNews["title"].stringValue,
-                                    url: jsonNews["url"].stringValue,
-                                    description: jsonNews["description"].stringValue,
-                                    author: jsonNews["author"].stringValue,
-                                    publishedAt: jsonNews["publishedAt"].stringValue,
-                                    content: jsonNews["content"].stringValue)
-                    }
-
+                let json = String(bytes: data, encoding: .utf8)
+                print(json ?? "no data")
+                let decoder = JSONDecoder()
+                do {
+                    let newsResponse = try decoder.decode(NewsResponse.self, from: data)
                     DispatchQueue.main.async {
-                        completion(nil, (newsArray, totalResults))
+                        completion(nil, (newsResponse.articles, newsResponse.totalResults))
+                    }
+                } catch {
+                    print(error)
+                    DispatchQueue.main.async {
+                        completion(error, nil)
                     }
                 }
-                print("JSON: \(json)")
             case .failure(let error):
                 DispatchQueue.main.async {
                     completion(error, nil)

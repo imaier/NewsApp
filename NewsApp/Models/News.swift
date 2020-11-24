@@ -10,13 +10,13 @@ import Foundation
 
 struct News: Codable {
     var newsSource = NewsSource(id: nil, name: "")
-    var urlToImage = ""
+    var urlToImage: String?
     var title = ""
     var url = ""
     var description = ""
-    var author = ""
+    var author: String?
     var publishedAt = ""
-    var content = ""
+    var content: String?
     var inBoookmarks = false
 
     enum CodingKeys: String, CodingKey {
