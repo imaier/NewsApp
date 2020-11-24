@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct NewsSource {
+struct NewsSource: Codable {
     var id: String?
     var name: String
 }

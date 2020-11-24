@@ -29,7 +29,10 @@ class NewsLoaderSevice: NSObject {
            params["page"] = String(pageNum)
         }
 
-        self.loadAndParse(request: "https://newsapi.org/v2/top-headlines", parameters: params, completion: completion)
+        loadAndParse(
+            request: "https://newsapi.org/v2/top-headlines",
+            parameters: params,
+            completion: completion)
     }
 
     func loadTopStories(
@@ -57,7 +60,10 @@ class NewsLoaderSevice: NSObject {
          Please set any of the following required parameters and try again: q, qInTitle, sources, domains
         */
 
-        self.loadAndParse(request: "https://newsapi.org/v2/everything", parameters: params, completion: completion)
+        loadAndParse(
+            request: "https://newsapi.org/v2/everything",
+            parameters: params,
+            completion: completion)
     }
 
     private func loadAndParse<Parameters: Encodable>(
