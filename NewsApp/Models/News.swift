@@ -15,7 +15,7 @@ struct News: Codable {
     var url = ""
     var description = ""
     var author: String?
-    var publishedAt = ""
+    var publishedAt: Date
     var content: String?
     var inBoookmarks = false
 

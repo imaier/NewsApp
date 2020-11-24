@@ -40,22 +40,12 @@ class ReadViewController: UIViewController, ReadViewInput {
     func update(with model: News) {
         sourceTitleLabel.text = model.newsSource.name
         newsTitle.text = model.title
-        publishDate.text = model.publishedAt
-
-        let sRFC3339DateFormatter = DateFormatter()
-        sRFC3339DateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        sRFC3339DateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
-        if let date = sRFC3339DateFormatter.date(from: model.publishedAt) {
-            let formatter = DateFormatter()
-            formatter.dateStyle = .medium
-            formatter.timeStyle = .none
-            formatter.locale = Locale(identifier: "en_US")
-            let result = formatter.string(from: date)
-            publishDate.text = result
-        } else {
-            publishDate.text = model.publishedAt
-        }
-
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        formatter.locale = Locale(identifier: "en_US")
+        let result = formatter.string(from: model.publishedAt)
+        publishDate.text = result
         contentLabel.text = model.description + "\n" + (model.content ?? "")
         bookmarkBarButton.image =
             model.inBoookmarks == false ? UIImage(named: "bookmark") : UIImage(named: "bookmarkSelected")

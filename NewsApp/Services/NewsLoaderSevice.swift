@@ -86,6 +86,11 @@ class NewsLoaderSevice: NSObject {
                 let json = String(bytes: data, encoding: .utf8)
                 print(json ?? "no data")
                 let decoder = JSONDecoder()
+
+                let sRFC3339DateFormatter = DateFormatter()
+                sRFC3339DateFormatter.locale = Locale(identifier: "en_US_POSIX")
+                sRFC3339DateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
+                decoder.dateDecodingStrategy = .formatted(sRFC3339DateFormatter)
                 do {
                     let newsResponse = try decoder.decode(NewsResponse.self, from: data)
                     DispatchQueue.main.async {

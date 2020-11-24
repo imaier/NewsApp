@@ -25,12 +25,7 @@ extension NewsListCellDetails {
         title = model.title
         //newsCell.headImage = nil
         sourceTitle = model.newsSource.name
-        let sRFC3339DateFormatter = DateFormatter()
-        sRFC3339DateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        sRFC3339DateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
-        if let date = sRFC3339DateFormatter.date(from: model.publishedAt) {
-            setRelativDate(with: date)
-        }
+        setRelativDate(with: model.publishedAt)
     }
 }
 

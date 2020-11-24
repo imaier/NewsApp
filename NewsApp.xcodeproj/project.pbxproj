@@ -783,7 +783,7 @@
 			path = Resourses;
 			sourceTree = "<group>";
 		};
-		CE3BAB14256CF068005ABDE8 /* SupportFiles */ = {
+		CE3BAB14256CF068005ABDE8 /* System */ = {
 			isa = PBXGroup;
 			children = (
 				CED193082557DEE000040A64 /* AppDelegate.swift */,
@@ -791,7 +791,7 @@
 				CED1930C2557DEE000040A64 /* FirstViewController.swift */,
 				CED1930E2557DEE000040A64 /* SecondViewController.swift */,
 			);
-			path = SupportFiles;
+			path = System;
 			sourceTree = "<group>";
 		};
 		CE4261702564EC74006578FD /* ViewModel */ = {
@@ -868,7 +868,7 @@
 		CED193072557DEE000040A64 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
-				CE3BAB14256CF068005ABDE8 /* SupportFiles */,
+				CE3BAB14256CF068005ABDE8 /* System */,
 				CE3BAB11256CF014005ABDE8 /* Resourses */,
 				CE764D60255815870002FF3C /* Services */,
 				CE764D2B2557FE930002FF3C /* Models */,
