@@ -30,3 +30,33 @@ struct News: Codable {
         case content
     }
 }
+
+extension News {
+    init(with newsMO: NewsMO) {
+        newsSource = NewsSource(id: newsMO.sourceId, name: newsMO.sourceName ?? "")
+        urlToImage = newsMO.urlToImage
+        title = newsMO.title ?? ""
+        url = newsMO.url ?? ""
+        description = newsMO.descriptionInfo ?? ""
+        author = newsMO.author
+        publishedAt = newsMO.publishedAt ?? Date()
+        content = newsMO.content
+        inBoookmarks = newsMO.inBoookmarks
+    }
+}
+
+extension NewsMO {
+    func fill(with news: News, andType type: SectionType) {
+        author = news.author
+        content = news.content
+        descriptionInfo = news.description
+        inBoookmarks = news.inBoookmarks
+        newsType = Int32(type.rawValue)
+        publishedAt = news.publishedAt
+        sourceId = news.newsSource.id
+        sourceName = news.newsSource.name
+        title = news.title
+        url = news.url
+        urlToImage = news.urlToImage
+    }
+}

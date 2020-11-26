@@ -8,8 +8,8 @@
 
 import Foundation
 
-enum SectionType {
-    case topStories
+enum SectionType: Int, CaseIterable {
+    case topStories = 0
     case latestNews
 }
 

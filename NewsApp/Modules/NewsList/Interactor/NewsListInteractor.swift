@@ -13,23 +13,11 @@ class NewsListInteractor: NewsListInteractorInput {
     private var newsContainer = NewsContainer()
 
     func getData(for type: SectionType) {
-        var page = 1
-        if newsContainer.totalResults > 0 {
-            page = newsContainer.articles.count / newsContainer.filter.pageSize + 1
-        }
-        var loadFunc = NewsLoaderSevice.shared.loadTopStories
-        if type == .latestNews {
-            loadFunc = NewsLoaderSevice.shared.loadNews
-        }
-        loadFunc(newsContainer.filter, page) { error, results in
+        //NewsManager.instance.setFilter(filter: newsContainer.filter, forType: type)
+        NewsManager.instance.getNews(for: type) { error, results in
             if let (articles, totalResults) = results {
-                if page == 1 {
-                    self.newsContainer.articles = articles
-                } else {
-                    self.newsContainer.articles.append(contentsOf: articles)
-                }
+                self.newsContainer.articles = articles
                 self.newsContainer.totalResults = totalResults
-
                 self.output.dataChanged(self.newsContainer.articles)
             } else {
                 guard let err = error else {

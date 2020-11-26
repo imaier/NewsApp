@@ -7,8 +7,8 @@ target 'NewsApp' do
 
   # Pods for NewsApp
   pod 'Alamofire'
-  pod 'SwiftyJSON'
-  #pod 'SwiftLint'
+  #pod 'SwiftyJSON'
+  pod 'SwiftLint'
   #pod "ViperMcFlurry"
   #pod "ViperMcFlurrySwiftFix"
   pod "LiteRoute"
