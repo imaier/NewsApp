@@ -10,25 +10,11 @@ import Foundation
 class DailyInteractor: DailyInteractorInput {
     weak var output: DailyInteractorOutput!
 
-    private var topStories = NewsContainer()
-    private var latestNews = NewsContainer()
-
     // MARK: - DailyInteractorInput
     func getTopStories() {
-        var page = 1
-        if topStories.totalResults > 0 {
-            page = topStories.articles.count / topStories.filter.pageSize + 1
-        }
-        NewsLoaderSevice.shared.loadTopStories(with: topStories.filter, page: page) { error, results in
-            if let (articles, totalResults) = results {
-                if page == 1 {
-                    self.topStories.articles = articles
-                } else {
-                    self.topStories.articles.append(contentsOf: articles)
-                }
-                self.topStories.totalResults = totalResults
-
-                self.output.topStoriesDataChanged(self.topStories.articles)
+        NewsManager.instance.getNews(for: .topStories) { error, results in
+            if let (articles, _) = results {
+                self.output.topStoriesDataChanged(articles)
             } else {
                 guard let err = error else {
                     return
@@ -39,20 +25,9 @@ class DailyInteractor: DailyInteractorInput {
     }
 
     func getLatestNews() {
-        var page = 1
-        if latestNews.totalResults > 0 {
-            page = latestNews.articles.count / latestNews.filter.pageSize + 1
-        }
-        NewsLoaderSevice.shared.loadNews(with: latestNews.filter, page: page) { error, results in
-            if let (articles, totalResults) = results {
-                if page == 1 {
-                    self.latestNews.articles = articles
-                } else {
-                   self.latestNews.articles.append(contentsOf: articles)
-                }
-                self.latestNews.totalResults = totalResults
-
-                self.output.latestNewsDataChanged(self.latestNews.articles)
+        NewsManager.instance.getNews(for: .latestNews) { error, results in
+            if let (articles, _) = results {
+                self.output.latestNewsDataChanged(articles)
             } else {
                 guard let err = error else {
                     return
