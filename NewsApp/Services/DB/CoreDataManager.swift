@@ -58,6 +58,7 @@ class CoreDataManager {
         let coordinator = self.persistentStoreCoordinator
         var managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         managedObjectContext.persistentStoreCoordinator = coordinator
+        managedObjectContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
         return managedObjectContext
     }()
 

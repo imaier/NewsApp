@@ -44,6 +44,10 @@ extension NewsListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
+        if indexPath.row == self.viewModel.articles.count - 1 {
+            self.output.lastCellShowed()
+        }
+
         if let newsCell = cell as? NewsListCellDetails {
             let model = self.viewModel.articles[indexPath.row]
             newsCell.fillStrings(with: model)

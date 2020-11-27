@@ -52,6 +52,35 @@ class NewsManager {
                 return
             }
             //load from network
+            self?.loadNewsAndAddToDB(for: section, completion: completion)
+        }
+    }
+
+    func loadMoreNews(
+        for section: SectionType,
+        completion:@escaping (_ error: Error?, _ result: ([News], Int)?) -> Void
+    ) -> Bool {
+        let newsContainer = newsContainers[section.rawValue]
+        if newsContainer.totalResults != 0 && newsContainer.totalResults == newsContainer.articles.count {
+            return false
+        }
+        loadNewsAndAddToDB(for: section, completion: completion)
+        return true
+    }
+
+    private var newsContainers: [NewsContainer]
+    private let newsLoader: NewsLoaderSevice
+}
+
+// MARK: - Private functions
+private extension NewsManager {
+    func loadNewsAndAddToDB(
+        for section: SectionType,
+        completion:@escaping (_ error: Error?, _ result: ([News], Int)?) -> Void
+    ) {
+        let newsContainer = newsContainers[section.rawValue]
+        DispatchQueue.global(qos: .default).async { [weak self] in
+            //load from network
             self?.loadNextPage(for: section, completion: { error, result in
                 guard error == nil else {
                     DispatchQueue.main.async {
@@ -75,19 +104,13 @@ class NewsManager {
         }
     }
 
-    private var newsContainers: [NewsContainer]
-    private let newsLoader: NewsLoaderSevice
-}
-
-// MARK: - Private functions
-private extension NewsManager {
     func loadNextPage(
         for section: SectionType,
         completion:@escaping (_ error: Error?, _ result: ([News], Int)?) -> Void
     ) {
         let newsContainer = newsContainers[section.rawValue]
         var page = 1
-        if newsContainer.totalResults > 0 {
+        if newsContainer.totalResults > 0 || newsContainer.totalResults == -1 {
             page = newsContainer.articles.count / newsContainer.filter.pageSize + 1
         }
         var loadFunc = newsLoader.loadTopStories
@@ -135,7 +158,7 @@ private extension NewsManager {
                 result.forEach { newsMO in
                     CoreDataManager.instance.managedObjectContext.delete(newsMO)
                 }
-
+                //CoreDataManager.instance.saveContext()
                 newsContainer.articles.forEach { news in
                     let newsMO = NewsMO(context: CoreDataManager.instance.managedObjectContext)
                     newsMO.fill(with: news, andType: type)

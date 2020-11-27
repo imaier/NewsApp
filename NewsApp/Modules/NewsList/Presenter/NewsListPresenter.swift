@@ -46,4 +46,8 @@ class NewsListPresenter: NSObject, NewsListModuleInput, NewsListViewOutput, News
 
     func onBookmarkTapped(withNews model: News) {
     }
+
+    func lastCellShowed() {
+        interactor.getNextPageData(for: sectionType)
+    }
 }

@@ -28,6 +28,27 @@ class NewsListInteractor: NewsListInteractorInput {
         }
     }
 
+    func getNextPageData(for type: SectionType) {
+        if newsContainer.totalResults > 0 && newsContainer.articles.count == newsContainer.totalResults {
+            return
+        }
+        let result = NewsManager.instance.loadMoreNews(for: type) { error, results in
+            if let (articles, totalResults) = results {
+                self.newsContainer.articles = articles
+                self.newsContainer.totalResults = totalResults
+                self.output.dataChanged(self.newsContainer.articles)
+            } else {
+                guard let err = error else {
+                    return
+                }
+                print(err)
+            }
+        }
+        if !result {
+            newsContainer.totalResults = newsContainer.articles.count
+        }
+    }
+
     func getUrl(_ url: String, complition: @escaping (String, Data?) -> Void) {
         CachedDataLoader.shared.loadData(url: url, completion: complition)
     }

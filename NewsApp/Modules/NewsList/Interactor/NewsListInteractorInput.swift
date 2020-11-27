@@ -11,4 +11,5 @@ import Foundation
 protocol NewsListInteractorInput {
     func getData(for type: SectionType)
     func getUrl(_ url: String, complition:@escaping (_ url: String, _ data: Data?) -> Void)
+    func getNextPageData(for type: SectionType)
 }
